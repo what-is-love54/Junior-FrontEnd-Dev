@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(53, 52, 52);
+    z-index: 1;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.topnav {
+    display: none;
+}
+
+.content {
+    background-image: url(/images/US_US-NY_NYC_1.jpg);
+    opacity: .5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: white;
+    height: 70%;
+    width: 40%;
+    border: 2px solid red;
+}
