@@ -6,54 +6,56 @@
 html,
 body {
     height: 100%;
+    background-image: url(./images/US_US-NY_NYC_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clearfix ::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background-image: url(/images/US_US-NY_NYC_1.jpg);
-    background: rgba(auto, auto, auto, 0.5);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.content {
-    flex: 1 0 auto;
+.header {
+    background-color: white;
 }
 
-.footer {
-    flex: 0 0 auto;
-    text-align: center;
-    color: white;
-    background-color: rgba(19, 18, 18, 0.5);
-    padding-bottom: 20px;
+.active {
+    display: block;
 }
 
-.topnav {
+.top-nav {
     background-color: white;
     overflow: hidden;
 }
 
-.topnav a {
-    float: left;
-    display: block;
+a {
     color: #000000;
-    text-align: right;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 24px;
 }
 
-.topnav .icon {
+.top-nav .icon {
     display: none;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 5%;
 }
 
 .flex-container {
     display: flex;
     box-sizing: border-box;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     height: 50%;
     width: 50%;
     border: 1px solid grey;
@@ -66,9 +68,14 @@ body {
     left: 25%;
 }
 
-.hamburger-menu {
+.band {
+    float: left;
+}
+
+.tab-menu {
     float: right;
-    padding-top: 60px;
+    width: 45%;
+    margin-top: 5%;
 }
 
 .container1 {
@@ -84,3 +91,16 @@ body {
 .container2 {
     padding: 5%;
 }
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(19, 18, 18, 0.5);
+    padding-bottom: 20px;
+}
+
