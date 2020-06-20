@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: indigo;
+    padding: 0% 7% 0% 7%;
+    z-index: -10;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.band {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 200%;
+    width: 50%;
+    padding: 2% 0 2% 10%;
+}
+
+.menu__box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aside {
+    box-sizing: border-box;
+    /* border: 2px solid blue; */
+    background-color: rgb(240, 236, 236);
+    height: 400px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.main {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    border: 0px;
+    width: 50%;
+    padding: 5% 8% 20% 4%;
+    /* margin-right: 5%; */
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+    border: 0px;
+    width: 50%;
+    padding: 5% 6% 10% 0%;
+    /* margin-right: 5%; */
+}
+
+.signs {
+    padding-top: 5%;
+    width: 200px;
+}
+
+.sidebar {
+    display: flex;
+    background-image: url(./images/base.png);
+    height: 250px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 0 2% 0 5%;
+}
+
+.font {
+    font-size: 18px;
+}
+
+.font1 {
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 45px;
+    padding: 5% 0 2% 0;
+}
+
+p {
+    color: gray;
+}
+
+.contactMe {
+    background-color: black;
+    color: white;
+    margin: 4% 0 5% 0;
+    padding: 2% 3% 2% 3%;
+}
+
+.footer {
+    display: flex;
+    flex: 0 0 auto;
+    background-color: rgb(240, 236, 236);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.icon {
+    width: 20px;
+    padding: 5px;
+    opacity: 0.2;
+}
+
+.rights {
+    color: gray;
+}
