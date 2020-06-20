@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="top-nav clearfix" id="myTopnav">
+            <div class="top-nav clearfix">
                 <div class="band">
                     <a href="#home" class="active">
                         <img src="./images/playpayIcon.jpg" alt="PlayPayIcon">
@@ -25,36 +25,36 @@
             </div>
         </div>
         <div class="content">
-            <div class="flex-container">
+            <div class="container">
                 <div class="container1">
-                    <div>Віддаємо:</div>
-                    <hr>
+                    <div class="inform">Віддаєте:</div>
                     <img src="./images/advcash.jpg" alt="advcash">
                     <form action="put">
-                        <div>Номер рахунку:</div>
+                        <div class="inform1">Номер рахунку:</div>
                         <input type="number">
-                        <div>Сума:</div>
+                        <div class="inform1">Сума:</div>
                         <input type="number">
                     </form>
-                    <button>USD</button>
-                    <button>RUB</button>
+                    <button class="money">USD</button>
+                    <button class="money">RUB</button>
                 </div>
-                <div id="loading">&#x1F503</div>
+                <div class="loading">&#x1F503</div>
                 <div class="container2">
-                    <div>Отримуємо:</div>
-                    <hr>
+                    <div class="inform">Отримуєте:</div>
                     <img src="./images/privat.jpg" alt="privat24">
                     <form action="put">
-                        <div>Номер рахунку:</div>
+                        <div class="inform1">Номер рахунку:</div>
                         <input type="number">
-                        <div>Буде зараховано:</div>
+                        <div class="inform1">Буде зараховано:</div>
                         <input type="number">
                     </form>
-                    <button>UAH</button>
+                    <button class="money">UAH</button>
                 </div>
-                <div id="exchange1">Поточний курс: 1 AdvCash USD = 26.9455 Приват24 UAH </div>
-                <div id="exchange2">З комісією Приват24 UAH - 10 UAH</div>
-                <button id="exchange3"><span>&#x1F503</span>Обміняти</button>
+                <div class="exchange1">
+                    Поточний курс: 1 AdvCash USD = 26.9455 Приват24 UAH
+                </div>
+                <div class="exchange2">З комісією Приват24 UAH - 10 UAH</div>
+                <button class="exchange3"><span>&#x1F503</span>Обміняти</button>
 
             </div>
         </div>
