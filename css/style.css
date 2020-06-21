@@ -112,6 +112,7 @@ body{
 	max-height: 325px;
 	text-align: left;
 }
+
 .transaction_center {
 	padding-left: 176px;
 	padding-right: 122px;
@@ -123,11 +124,8 @@ hr {
     height:1px;
 }
 
-}
-
 .footer__text {
 	font-size: 14px;
-
 }
 
 .footer {
