@@ -1,0 +1,146 @@
+body{
+	font-family:Verdana;
+	margin:0;
+	padding: 0;
+}
+
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+}
+.header{
+	
+}
+
+.header__logo {
+	padding-left: 81px;
+}
+
+.header__inner {
+	display:flex;
+	justify-content: space-between;
+
+	padding-bottom: 12px;
+	padding-top: 27px;
+	align-items: center;
+}
+.nav {
+	font-size: 24px;
+	font-family: Verdana;
+	background-color: #fafbfb;
+}
+
+.nav__link {
+	color: #2a2a29;
+	text-decoration: none;
+}
+
+.nav__link:hover {
+	text-decoration: underline;
+}
+
+.nav__link:first-child {
+	margin-right: 55px;
+}
+
+.nav__link:nth-child(2) {
+	margin-right: 34px;
+}
+
+.nav__link:nth-child(3) {
+	margin-right: 12px;
+}
+
+.intro {
+	border-top: 1px solid #97a8c4;
+	/*background: url(../img/background1.jpg) center no-repeat / cover;*/
+	background-image: url(../img/background1.jpg);
+	height: 750px;
+	background-repeat: no-repeat; 
+	background-size: cover;
+}	
+
+.intro:after {
+	content: '';
+	display: block;
+}
+
+.intro__main {
+	
+}
+
+.transaction {
+	background-color: #fff;
+	opacity: 0.78;
+	max-width: 975px;
+	max-height: 513px;
+  	justify-content: center;
+  	border: 1px solid #a6b1c6;
+  	border-radius:9px;
+	/*position: absolute;*/
+	display: flex;
+ 	align-items: center;
+	width: 979px;
+	height: 517px;
+	align-self: center;
+	margin-top: 90px;
+
+}
+
+.transaction{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.transaction_left {
+	max-width: 281px;
+	max-height: 325px;
+	text-align: left;
+}
+
+.transaction_right {
+	max-width: 281px;
+	max-height: 325px;
+	text-align: left;
+}
+.transaction_center {
+	padding-left: 176px;
+	padding-right: 122px;
+}
+
+hr {
+	color: #e1e2e2
+    opacity: 0.2;
+    height:1px;
+}
+
+}
+
+.footer__text {
+	font-size: 14px;
+
+}
+
+.footer {
+    flex: 0 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+	width: 100%;
+	padding-top: 10px;
+	background-color: #53504f;
+	opacity: 0.80;
+	font-size: 14px;
+}
+
+span {
+	color: white;
+}
