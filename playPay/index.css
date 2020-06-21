@@ -147,6 +147,35 @@ input {
     padding: 3% 0 3% 0;
 }
 
+.radio-item {
+    display: inline-block;
+    padding: 2%;
+    margin: 5% 10% 0 0;
+    font-size: 100%;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+.radio-item input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    background-color: #eee;
+}
+
+.radio-item:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.radio-item input:checked~.checkmark {
+    background-color: #c0c797;
+}
+
 .money {
     padding: 2%;
     margin: 2%;
