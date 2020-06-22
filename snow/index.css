@@ -5,7 +5,6 @@
 
 html,
 body {
-    height: 100%;
     background-color: indigo;
     padding: 0% 7% 0% 7%;
 }
@@ -37,12 +36,19 @@ body {
     justify-content: space-around;
 }
 
-.aside {
-    box-sizing: border-box;
-    /* border: 2px solid blue; */
-    background-color: rgb(240, 236, 236);
-    height: 400px;
+
+/* @media screen and (max-width: 700px) {
+    .menu__box {
+        height: 2px;
+        width: 15px;
+        background-color: black;
+        
+    }
+} */
+
+.fon {
     width: 100%;
+    height: 400px;
 }
 
 .content {
@@ -50,32 +56,10 @@ body {
     flex: 1 0 auto;
 }
 
-.main {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    border: 0px;
-    width: 50%;
-    padding: 5% 8% 20% 4%;
-    /* margin-right: 5%; */
-}
-
-.article {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    color: gray;
-    font-family: Arial, Helvetica, sans-serif;
-    /* box-sizing: border-box; */
-    border: 0px;
-    width: 50%;
-    padding: 5% 6% 10% 0%;
-    /* margin-right: 5%; */
-}
-
-.signs {
-    padding-top: 5%;
-    width: 200px;
+@media screen and (max-width: 620px) {
+    .content {
+        flex-direction: column
+    }
 }
 
 .sidebar {
@@ -87,20 +71,71 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 620px) {
+    .sidebar {
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+}
+
+.sidebar-item1 {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.sidebar-item2 {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.main {
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding: 5% 5% 20% 8%;
+}
+
+@media screen and (max-width: 620px) {
+    .main {
+        width: 90%;
+        padding: 5% 5% 20% 5%;
+    }
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding: 5% 4% 10% 0%;
+}
+
+@media screen and (max-width: 620px) {
+    .article {
+        width: 94%;
+        padding: 5% 3% 10% 3%;
+        align-items: center;
+    }
+}
+
+.signs {
+    padding-top: 5%;
+    width: 175px;
+}
+
 .count {
     display: flex;
     flex-direction: row;
-    font-size: 40px;
-    padding: 0 2% 0 5%;
-}
-
-.font {
-    font-size: 18px;
+    font-size: 200%;
+    align-items: center;
 }
 
 .font1 {
     flex-direction: column;
-    font-size: 18px;
+    font-size: 50%;
 }
 
 .contact {
@@ -111,12 +146,13 @@ body {
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 250%;
     padding: 5% 0 2% 0;
 }
 
 p {
     color: gray;
+    padding: 0 5%;
 }
 
 .contactMe {
@@ -136,9 +172,14 @@ p {
     height: 200px;
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
 .icon {
     width: 20px;
-    padding: 5px;
+    padding: 2%;
     opacity: 0.2;
 }
 
