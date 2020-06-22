@@ -84,7 +84,7 @@ body{
 	height: 517px;
 	align-self: center;
 	margin-top: 90px;
-
+	font-weight: 24px;
 }
 
 .transaction{
@@ -105,15 +105,140 @@ body{
 	text-align: left;
 }
 
+.transaction_input-pole {
+	width: 241px;
+	height: 36px;
+	border-color: #97a8c4;
+}
+
+.transaction_left-give {
+	padding-top: 30px;
+	font-size: 24px;
+	padding-left: 9px;
+}
+
+.transaction_right-get {
+	padding-top: 30px;
+	font-size: 24px;
+	padding-left: 8px;
+}
+
+
+.transaction_left-account.number {
+	font-size: 18px;
+	width: 242px;
+	height: 136px;
+}
+
+.transaction_right-account.number {
+font-size: 18px;
+width: 242px;
+height: 136px;
+}
+
 .transaction_center {
-	padding-left: 176px;
-	padding-right: 122px;
+	padding-top: 100px;
+}
+
+
+.account_number-left {
+	margin-top: 29px;
+	margin-bottom: 8px;
+}
+
+.account_number-right {
+	margin-top: 41px;
+	margin-bottom: 8px;
+}
+
+.img_left {
+	padding-left: 26px;
+}
+
+.img_right {
+	padding-right: 5px;
+}
+
+.transaction_data-left {
+	padding-left: 31px;
+}
+
+.transaction_data-right {
+	padding-left: 5px;
+}
+
+.transaction_left-sum {
+	padding-top: 21px;
+	padding-bottom: 10px;
+}
+
+.transaction_right-sum {
+	padding-top: 21px;
+	padding-bottom: 10px;
+}
+
+.transaction_input-pole.down {
+	padding-bottom: 11px;
+}
+
+#uah_label {
+	display: none;
+}
+
+#uah_label_style {
+	text-align: center;
+	display: block;
+	width: 41px;
+	height: 22px;
+	background-color: white;
+	border: 1px solid #aab4be ;
+}
+
+#uah_label_style:checked {
+	background-color: #fcf7c0;
+}
+
+#rub_label {
+	display: none;
+}
+
+#rub_label_style {
+	text-align: center;
+	display: block;
+	width: 41px;
+	height: 22px;
+	background-color: white;
+	border: 1px solid #aab4be ;
+	float: left;
+}
+
+#run_label_style:checked {
+	background-color: #fcf7c0;
+}
+
+
+#usd_label {
+	display: none;
+}
+
+#usd_label_style {
+	text-align: center;
+	display: block;
+	width: 41px;
+	height: 22px;
+	background-color: white;
+	border: 1px solid #aab4be ;
+	float: left;
+}
+
+#usd_label_style:checked {
+	background-color: #fcf7c0;
 }
 
 hr {
-	/*color: #e1e2e2
-    opacity: 0.2;
-    height:1px;*/
+	color: #e1e2e2;
+	width: 281px;
+	margin-bottom:35px;
 }
 
 .footer__text {

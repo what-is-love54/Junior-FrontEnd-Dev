@@ -24,29 +24,68 @@
 	<div align="center" class="intro">
 		<div class="intro__main">
 			<div class="intro__transaction transaction">
+
+
+
+
+
 				<div class="transaction_left">
-					<div class="transaction_left-give">
-						Віддаєте
-					</div>
+					<div class="transaction_left-give">Віддаєте:</div>
 					<hr>
-					<img src="img/advcash.png" alt="">
-					<div class="transaction_left-account.number">
-						<div>
-							Номер рахунку:
+					<img src="img/advcash.png" alt="advcash" class="img_left">
+					<div class="transaction_data-left">
+						<div class="transaction_left-account.number">
+							<div class="account_number-left">Номер рахунку:</div>
+							<input type="number" class="transaction_input-pole">
 						</div>
-						<input type="number">
-					</div>
-					<div class="transaction_left-sum">
-						<div class="">
-							Сума:
+						<div >
+							<div class="transaction_left-sum">Сума:</div>
+							<input type="number" class="transaction_input-pole">
 						</div>
-						<input type="number">
 					</div>
+					<label for="usd_label" id="usd_label_style">USD</label>
+					<input type="checkbox" name="currency" id="usd_label">
+					<div class="currency_block">
+
+					</div>
+					<label for="rub_label" id="rub_label_style">RUB</label>
+					<input type="checkbox" name="currency" id="rub_label">
+					<div class="currency_block">
+
+					</div>
+				
 				</div>
+				</div>
+				</div>
+
+
+
 				<div class="transaction_center">
-					<img src="img/transfer.png" alt="transfer" class="src">
+					<img src="img/transfer.png" alt="transfer">
 				</div>
 				<div class="transaction_right">
+					<div class="transaction_right-get">Отримуєте:</div>
+					<hr>
+					<img src="img/privat24.png" alt="privat24" class="img_right">
+					<div class="transaction_data-right">
+						<div class="transaction_right-account.number">
+							<div class="account_number-right">Номер рахунку:</div>
+							<input type="number" class="transaction_input-pole">
+						</div>
+						<div class="">
+							<div class="transaction_left-sum">Буде зараховано:</div>
+						<input type="number" class="transaction_input-pole transaction_input-pole.down">
+					</div>
+					<div>
+						<label for="uah_label" id="uah_label_style">UAH</label>
+							<input type="checkbox" name="currency" id="uah_label">
+							<div class="currency_block">
+
+							</div>
+						
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>		
