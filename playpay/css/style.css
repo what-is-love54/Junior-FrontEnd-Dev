@@ -4,7 +4,6 @@ body{
 	padding: 0;
 }
 
-}
 *,
 *:before,
 *:after {
@@ -15,9 +14,6 @@ body{
 	width: 100%;
 	max-width: 1240px;
 	margin: 0 auto;
-}
-.header{
-	
 }
 
 .header__logo {
@@ -73,10 +69,6 @@ body{
 	display: block;
 }
 
-.intro__main {
-	
-}
-
 .transaction {
 	background-color: #fff;
 	opacity: 0.78;
@@ -119,9 +111,9 @@ body{
 }
 
 hr {
-	color: #e1e2e2
+	/*color: #e1e2e2
     opacity: 0.2;
-    height:1px;
+    height:1px;*/
 }
 
 .footer__text {
