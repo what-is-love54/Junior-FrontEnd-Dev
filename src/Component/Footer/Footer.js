@@ -9,22 +9,13 @@ const FooterWrapper = styled.footer`
 	background: #454545;
 	flex: 0 0 auto;
 	align-items: center;
-    padding: 1.5% 0;
+	padding: 1.5% 0;
 `;
 
-const Link = styled.a`
-    color:white;
-    text-decoration:none;
-`;
-
-const Footer = () => {
-    const { t } = useTranslation();
-    return (
-        <FooterWrapper>
-            <Link href="https://uk.wikipedia.org/wiki/GitHub">{t('Foot')}</Link>
-        </FooterWrapper>
-    );
-};
+const Footer = props =>{
+	const { t } = useTranslation()
+	return <FooterWrapper>{t('About')}</FooterWrapper>
+} 
 
 
 export default Footer;

@@ -1,8 +1,17 @@
 {
-    "AboutGit":"GitHub  is the largest web service for hosting IT projects and their joint development. The web service is based on the Git version control system and was developed on Ruby on Rails and Erlang by GitHub, Inc formerly Logical Awesome. The service is free for open source projects and since 2019 small private projects, giving them all the features including SSL, and for large corporate projects various paid tariff plans are offered . ",
-    "Git":"Git",
     "Users":"Users",
-    "Me":"My Account",
-    "Foot":"About Git",
-    "Link":"Link"
+    "Planets":"Planets",
+    "Ships":"Ships",
+    "Name":"Name: ",
+    "HairColor":"Hair's color: ",
+    "Height":"Height: ",
+    "Gender":"Gender: ",
+    "About":"About us",
+    "Home":"Home: ",
+    "Diameter":"Diameter: ",
+    "Population":"Population: ",
+    "Climate":"Climate: ",
+    "Cost":"Cost: ",
+    "Passengers":"Passengers: ",
+    "MaxSpeed":"Max speed: "
 }
