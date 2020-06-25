@@ -1,29 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
 }
-
 html,
 body {
     height: 100%;
-    background-image: url(./images/US_US-NY_NYC_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(./images/US_US-NY_NYC_1.jpg); 
+    background-size: cover ;
+    color:#2a2a29;
 }
 
 .clearfix ::after {
-    content: "";
-    clear: both;
+    visibility: hidden;
     display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
+
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; } 
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
-
-
 
 .active {
     display: block;
@@ -31,7 +37,7 @@ body {
 
 .top-nav {
     background-color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 a {
@@ -49,12 +55,6 @@ a {
     padding: 0% 3%;
 }
 
-@media screen and (max-width: 600px) {
-    .menu-item {
-        padding: 0% 1%;
-    }
-}
-
 .container {
     margin: 0 auto;
     margin-top: 5%;
@@ -64,14 +64,8 @@ a {
     border-radius: 20px;
     background-color: white;
     opacity: 0.9;
-    width: 300px;
+    width: 800px;
     border: 1px solid grey;
-}
-
-@media screen and (max-width: 900px) {
-    .container {
-        width: 500px;
-    }
 }
 
 .band {
@@ -95,68 +89,51 @@ img {
     width: 100%;
 }
 
+.inform1 {
+    /* font-size: 150%; */
+    padding: 2%;
+}
+
 .loading {
     padding: 5% 5% 20% 5%;
     width: 23.33%;
     float: left;
     text-align: center;
-    font-size: 200%;
+    /* font-size: 200%; */
 }
 
 .inform {
-    font-size: 200%;
+    /* font-size: 200%; */
     padding: 2%;
     border-bottom: 1px solid rgb(163, 162, 162);
     margin-bottom: 2%;
 }
 
- @media screen and (max-width: 900px) {
-    .inform {
-        font-size: 175%;
-    }
-    .inform1 {
-        font-size: 125%;
-    }
+.content {
+	flex: 1 0 auto;
 }
 
-@media screen and (max-width: 600px) {
-    .inform {
-        font-size: 150%;
-    }
-}
-
-.inform1 {
-    font-size: 15px;
-    padding: 2%;
-}
-
-@media screen and (max-width: 600px) {
-    .inform1 {
-        font-size: 100%;
-    }
-}
-
-input {
+/* input {
     width: 100%;
     padding: 3% 0 3% 0;
-}
+} */
 
 .radio-item {
     display: inline-block;
     padding: 2%;
     margin: 5% 10% 0 0;
-    font-size: 100%;
+    /* font-size: 100%; */
     font-weight: bold;
     border: 1px solid gray;
     border-radius: 6px;
     background-color: #eee;
 }
 
-.radio-item input {
+/* .radio-item input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-}
+} */
 
 .checkmark {
     background-color: #eee;
@@ -177,20 +154,19 @@ input {
 
 .exchange1 {
     padding: 3% 10% 1% 10%;
-    font-size: 150%;
+    /* font-size: 150%; */
     text-align: center;
-    clear: both;
 }
 
 .exchange2 {
-    font-size: 120%;
+    /* font-size: 120%; */
     color: gray;
     text-align: center;
 }
 
 .exchange3 {
     background-color: rgb(37, 92, 241);
-    font-size: 200%;
+    /* font-size: 200%; */
     color: white;
     border-radius: 5px;
     padding: 1% 3% 1% 3%;
