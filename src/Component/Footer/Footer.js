@@ -12,10 +12,10 @@ const FooterWrapper = styled.footer`
 	padding: 1.5% 0;
 `;
 
-const Footer = props =>{
+const Footer = props => {
 	const { t } = useTranslation()
 	return <FooterWrapper>{t('About')}</FooterWrapper>
-} 
+}
 
 
 export default Footer;

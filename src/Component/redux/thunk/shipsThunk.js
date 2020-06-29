@@ -16,13 +16,9 @@ export const setShipsThunk = () => async dispatch => {
 }
 
 export const setShipByIdThunk = (url) => async dispatch => {
-	dispatch(setFetching(true))
 	await getShipById(url)
 		.then((res) => {
 			dispatch(setShip(res.data))
 		})
 		.catch(err => { debugger })
-		.finally(() => {
-			dispatch(setFetching(false))
-		})
 }

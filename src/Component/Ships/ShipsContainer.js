@@ -27,10 +27,10 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const ShipsContainer = ({ ships, ship, fetching, setShipsThunk, setShipByIdThunk, ...props }) => {
+const ShipsContainer = ({ ships, ship, fetching, setShipsThunk, setShipByIdThunk }) => {
 	useEffect(() => {
 		setShipsThunk();
-	}, [])
+	}, [setShipsThunk])
 	return (
 		!!fetching
 			? <Preloader />

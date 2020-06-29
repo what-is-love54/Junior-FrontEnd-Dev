@@ -5,11 +5,12 @@ import { planetSlice } from "./slices/planets";
 import { shipsSlice } from "./slices/ships";
 
 const reducer = {
-    people:peopleSlice.reducer,
-    planet:planetSlice.reducer,
-    shipsS:shipsSlice.reducer
+    people: peopleSlice.reducer,
+    planet: planetSlice.reducer,
+    shipsS: shipsSlice.reducer
 }
 
 export const store = configureStore({
     reducer,
-    middleware:[...getDefaultMiddleware(),logger]})
+    middleware: [...getDefaultMiddleware(), logger]
+})

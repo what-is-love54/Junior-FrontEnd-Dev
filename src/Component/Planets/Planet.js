@@ -44,12 +44,12 @@ const DataWrapper = styled.div`
 `;
 
 
-const Planet = ({planet, ...props }) => {
+const Planet = ({ planet }) => {
 	const { t } = useTranslation();
 	return <>
 		<Wrapper>
 			<DataWrapper>
-				<img src="https://zoko.com.ua/sites/default/files/styles/s650x650/public/categories/kosmos.jpg?itok=-oWH-Y0k" alt="NoIMG" className="photo"/>
+				<img src="https://cdni.rt.com/russian/images/2017.06/article/594e4840c46188182a8b473a.jpg" alt="NoIMG" className="photo" />
 				<div className="wrapper">
 					<h4 className="name">{planet.name}</h4>
 					<div className="diameter">{t("Diameter")} {planet.diameter} km</div>

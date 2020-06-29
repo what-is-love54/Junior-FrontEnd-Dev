@@ -10,13 +10,13 @@ import { Provider } from 'react-redux';
 import { store } from './Component/redux/store';
 
 ReactDOM.render(
-    <BrowserRouter>
-      <Provider store={store}>
-        <Suspense fallback={(<Preloader/>)}>
-          <App />
-        </Suspense>
-      </Provider>
-    </BrowserRouter>,
+  <BrowserRouter>
+    <Provider store={store}>
+      <Suspense fallback={(<Preloader />)}>
+        <App />
+      </Suspense>
+    </Provider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -13,5 +13,6 @@
     "Climate":"Climate: ",
     "Cost":"Cost: ",
     "Passengers":"Passengers: ",
-    "MaxSpeed":"Max speed: "
+    "MaxSpeed":"Max speed: ",
+    "Rotation":"Rotation period: "
 }

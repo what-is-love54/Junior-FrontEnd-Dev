@@ -47,9 +47,13 @@ const Language = styled.select`
     font-family: 'Lato-Regular','Lato-Medium';
     border:none;
     background: rgba(0, 0, 0, 0);
+    color:white;
+    option{
+        color:black;
+    }
 `;
 
-const Navbar = (props) => {
+const Navbar = props => {
     const handleClick = (lang) => {
         i18next.changeLanguage(lang)
     }
@@ -62,8 +66,8 @@ const Navbar = (props) => {
                 <NavLink to='/second' ><Button>{t('Planets')}</Button></NavLink>
                 <NavLink to='/third' ><Button>{t('Ships')}</Button></NavLink>
                 <Language onChange={(e) => {
-                        handleClick(e.target.value)
-                    }} defaultValue = 'uk'>
+                    handleClick(e.target.value)
+                }} defaultValue='uk'>
                     <option value='ru' onClick={() => handleClick('ru')}>RU</option>
                     <option value='uk' onClick={() => handleClick('uk')}>UK</option>
                     <option value='en' onClick={() => handleClick('en')}>EN</option>

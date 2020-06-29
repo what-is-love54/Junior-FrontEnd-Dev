@@ -31,15 +31,15 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const PeopleContainer = ({ people, human, home, fetching, ...props }) => {
+const PeopleContainer = ({ people, human, home, fetching, SetPeopleThunk, setHumanThunk }) => {
 	useEffect(() => {
-		props.SetPeopleThunk()
-	}, [people])
+		SetPeopleThunk()
+	}, [SetPeopleThunk])
 	return (
 		!!fetching
 			? <WrapperPreload><Preloader />Loading</WrapperPreload>
 			: <Wrapper >
-				<RenderItem items={people} onClick={props.setHumanThunk} />
+				<RenderItem items={people} onClick={setHumanThunk} />
 				{human
 					? <Human human={human} home={home} />
 					: <></>

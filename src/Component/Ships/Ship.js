@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
@@ -45,7 +45,7 @@ const DataWrapper = styled.div`
 `;
 
 
-const Ship = ({ ship, ...props }) => {
+const Ship = ({ ship }) => {
 	const { t } = useTranslation();
 	return <>
 		<Wrapper>
@@ -70,4 +70,4 @@ Ship.propTypes = {
 	ship: PropTypes.object.isRequired
 };
 
-export default Ship;
+export default memo(Ship);

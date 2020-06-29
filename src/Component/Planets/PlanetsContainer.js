@@ -27,10 +27,10 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const PlanetsContainer = ({ planets, fetching, planet, SetPlanetThunk, getPlanetByIdThunk, ...props }) => {
+const PlanetsContainer = ({ planets, fetching, planet, SetPlanetThunk, getPlanetByIdThunk }) => {
 	useEffect(() => {
 		SetPlanetThunk()
-	}, [])
+	}, [SetPlanetThunk])
 	return (
 		!!fetching
 			? <Preloader />
@@ -46,7 +46,7 @@ const PlanetsContainer = ({ planets, fetching, planet, SetPlanetThunk, getPlanet
 	)
 };
 
-const mapStateToProps = ({ planet, ...state }) => {
+const mapStateToProps = ({ planet }) => {
 	return {
 		planets: planet.planets,
 		fetching: planet.fetching,

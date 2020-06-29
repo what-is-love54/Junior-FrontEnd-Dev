@@ -4,6 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 import PeopleContainer from '../People/PeopleContainer';
 import PlanetsContainer from '../Planets/PlanetsContainer';
 import ShipsContainer from '../Ships/ShipsContainer';
+import RandomPlanetContainer from '../Planets/RandomPlanet/RandomPlanetContainer';
 
 const MainContain = styled.div`
     flex: 1 0 auto;
@@ -11,12 +12,14 @@ const MainContain = styled.div`
     align-items:center;
     justify-content:center;
     padding-left:50px;
+    flex-wrap:wrap;
 `;
 
-const Contain = (props) => {
-    
+const Contain = props => {
+
     return (
         <MainContain>
+            <RandomPlanetContainer />
             <Route path='/people' render={() => <PeopleContainer />} />
             <Route path='/second' render={() => <PlanetsContainer />} />
             <Route path='/third' render={() => <ShipsContainer />} />

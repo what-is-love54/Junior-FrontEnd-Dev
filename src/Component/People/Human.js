@@ -49,7 +49,7 @@ const Human = ({ home, human, ...props }) => {
 	return <>
 		<WrapperHuman>
 			<DataWrapper>
-				<img src="https://i.stack.imgur.com/l60Hf.png" alt="NoIMG" className="photo"/>
+				<img src="https://i.stack.imgur.com/l60Hf.png" alt="NoIMG" className="photo" />
 				<div className="wrapper">
 					<h4 className="name">{human.name}</h4>
 					<div className="gender">{t("Gender")} {human.gender} </div>

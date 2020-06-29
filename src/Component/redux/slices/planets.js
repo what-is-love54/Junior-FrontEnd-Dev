@@ -3,18 +3,18 @@ import { createSlice } from '@reduxjs/toolkit'
 export const planetSlice = createSlice({
   name: 'planet',
   initialState: {
-    planets:[],
-    planet:null,
-    fetching:true
+    planets: [],
+    planet: {},
+    fetching: true
   },
   reducers: {
-    setPlanets (state, action) {
-			state.planets = action.payload
+    setPlanets(state, action) {
+      state.planets = action.payload
     },
-    setFetching (state, action) {
+    setFetching(state, action) {
       state.fetching = action.payload
     },
-    setPlanet (state, action) {
+    setPlanet(state, action) {
       state.planet = action.payload
     }
   }
