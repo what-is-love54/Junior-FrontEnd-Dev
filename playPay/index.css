@@ -7,7 +7,7 @@ html,
 body {
     height: 100%;
     background-image: url(./images/US_US-NY_NYC_1.jpg);
-    background-size: cover;
+    size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
 }
@@ -30,6 +30,7 @@ body {
 
 .active {
     display: block;
+    width: 100%;
 }
 
 .top-nav {
@@ -54,6 +55,7 @@ a {
 
 .band {
     float: left;
+    width: 200px;
 }
 
 .tab-menu {
@@ -68,36 +70,35 @@ a {
     margin-top: 5%;
     margin-bottom: 5%;
     padding-bottom: 4%;
-    box-sizing: border-box;
     border-radius: 20px;
     background-color: white;
     opacity: 0.9;
-    width: 800px;
+    width: 900px;
     border: 1px solid grey;
 }
 
 .cont-item1 {
     padding: 5%;
-    width: 23.33%;
     float: left;
+    width: 30%;
 }
 
 .cont-item2 {
     padding: 5%;
-    width: 23.33%;
     float: right;
+    width: 30%;
 }
 
 img {
-    width: 100%;
+    width: 200px;
 }
 
 .loading {
     padding: 5%;
-    width: 23.33%;
-    float: left;
     text-align: center;
     font-size: 40px;
+    width: 10%;
+    float: left;
 }
 
 .inform {
@@ -121,23 +122,6 @@ img {
     }
     .inform1 {
         font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .inform {
-        font-size: 18px;
-    }
-    .menu-item1 {
-        padding: 0% 1%;
-    }
-    .menu-item2 {
-        padding: 0% 1%;
-    }
-    .menu-item,
-    .menu-item1,
-    .menu-item2 {
-        display: block;
     }
 }
 
@@ -205,6 +189,40 @@ input {
 .exchange4 {
     text-align: center;
     padding-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-item {
+        display: block;
+    }
+    .loading {
+        clear: both;
+        padding: 0% 1%;
+        width: 100%;
+    }
+    .cont-item1,
+    .cont-item2 {
+        width: 60%;
+        clear: both;
+        padding: 5% 20%;
+    }
+    img {
+        width: 60%;
+    }
+    .exchange1 {
+        font-size: 18px;
+    }
+    .exchange3 {
+        font-size: 14px;
+    }
+    .container {
+        width: auto;
+        margin: 12%;
+        min-width: 160px;
+    }
+    .inform {
+        font-size: 20px;
+    }
 }
 
 .content {
