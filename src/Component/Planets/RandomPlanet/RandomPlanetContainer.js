@@ -7,6 +7,7 @@ const RandomPlanetContainer = props => {
 	const intervalTime = 3500;
 	const [random, setRandom] = useState(1);
 	const [planet, setPlanet] = useState();
+	
 	const createRandomNum = () => {
 		setRandom(Math.floor(Math.random() * (max - min + 1)) + min)
 	}
