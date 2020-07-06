@@ -7,7 +7,7 @@ html,
 body {
     height: 100%;
     background-image: url(./images/US_US-NY_NYC_1.jpg);
-    background-size: cover;
+    size: cover;
     background-repeat: no-repeat;
 }
 
@@ -27,6 +27,7 @@ body {
 
 .active {
     display: block;
+    width: 100%;
 }
 
 .top-nav {
@@ -49,33 +50,9 @@ a {
     padding: 0% 3%;
 }
 
-@media screen and (max-width: 600px) {
-    .menu-item {
-        padding: 0% 1%;
-    }
-}
-
-.container {
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-bottom: 4%;
-    box-sizing: border-box;
-    border-radius: 20px;
-    background-color: white;
-    opacity: 0.9;
-    width: 300px;
-    border: 1px solid grey;
-}
-
-@media screen and (max-width: 900px) {
-    .container {
-        width: 500px;
-    }
-}
-
 .band {
     float: left;
+    width: 200px;
 }
 
 .tab-menu {
@@ -85,59 +62,68 @@ a {
     text-align: right;
 }
 
-.cont-item {
+.container {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 4%;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.9;
+    width: 900px;
+    border: 1px solid grey;
+}
+
+.cont-item1 {
     padding: 5%;
-    width: 23.33%;
     float: left;
+    width: 30%;
+}
+
+.cont-item2 {
+    padding: 5%;
+    float: right;
+    width: 30%;
 }
 
 img {
-    width: 100%;
+    width: 200px;
 }
 
 .loading {
-    padding: 5% 5% 20% 5%;
-    width: 23.33%;
-    float: left;
+    padding: 5%;
     text-align: center;
-    font-size: 200%;
+    font-size: 40px;
+    width: 10%;
+    float: left;
 }
 
 .inform {
-    font-size: 200%;
+    font-size: 36px;
     padding: 2%;
     border-bottom: 1px solid rgb(163, 162, 162);
     margin-bottom: 2%;
 }
 
- @media screen and (max-width: 900px) {
-    .inform {
-        font-size: 175%;
-    }
-    .inform1 {
-        font-size: 125%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .inform {
-        font-size: 150%;
-    }
-}
-
 .inform1 {
-    font-size: 15px;
+    font-size: 24px;
     padding: 2%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    .inform {
+        font-size: 24px;
+    }
+    .container {
+        width: 600px;
+    }
     .inform1 {
-        font-size: 100%;
+        font-size: 14px;
     }
 }
 
 input {
-    width: 100%;
+    width: 98%;
     padding: 3% 0 3% 0;
 }
 
@@ -145,7 +131,7 @@ input {
     display: inline-block;
     padding: 2%;
     margin: 5% 10% 0 0;
-    font-size: 100%;
+    font-size: 18px;
     font-weight: bold;
     border: 1px solid gray;
     border-radius: 6px;
@@ -156,6 +142,7 @@ input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    width: 0%;
 }
 
 .checkmark {
@@ -177,20 +164,20 @@ input {
 
 .exchange1 {
     padding: 3% 10% 1% 10%;
-    font-size: 150%;
+    font-size: 24px;
     text-align: center;
     clear: both;
 }
 
 .exchange2 {
-    font-size: 120%;
+    font-size: 18px;
     color: gray;
     text-align: center;
 }
 
 .exchange3 {
     background-color: rgb(37, 92, 241);
-    font-size: 200%;
+    font-size: 24px;
     color: white;
     border-radius: 5px;
     padding: 1% 3% 1% 3%;
@@ -199,6 +186,40 @@ input {
 .exchange4 {
     text-align: center;
     padding-top: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-item {
+        display: block;
+    }
+    .loading {
+        clear: both;
+        padding: 0% 1%;
+        width: 100%;
+    }
+    .cont-item1,
+    .cont-item2 {
+        width: 60%;
+        clear: both;
+        padding: 5% 20%;
+    }
+    img {
+        width: 60%;
+    }
+    .exchange1 {
+        font-size: 18px;
+    }
+    .exchange3 {
+        font-size: 14px;
+    }
+    .container {
+        width: auto;
+        margin: 12%;
+        min-width: 160px;
+    }
+    .inform {
+        font-size: 20px;
+    }
 }
 
 .content {
