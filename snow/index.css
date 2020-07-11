@@ -19,23 +19,24 @@ body {
 .header {
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .band {
     font-family: cursive;
     font-style: italic;
-    font-size: 200%;
+    font-size: 34px;
     width: 50%;
     padding: 2% 10%;
 }
 
-.menu__box {
-    display: flex;
+.hamburger-menu {
+    padding: 1%;
+    width: 100%;
 }
 
-.hamburger-menu {
-    padding: 1% 1% 3% 1%;
-    width: 100%;
+.menu__box {
+    display: flex;
 }
 
 .menu__toggle {
@@ -44,34 +45,31 @@ body {
 
 .menu__btn {
     display: flex;
-    /* используем flex для центрирования содержимого */
     align-items: center;
-    /* центрируем содержимое кнопки */
     width: 26px;
     cursor: pointer;
     z-index: 1;
 }
 
 .menu__box {
+    font-family: 'Roboto', sans-serif;
     justify-content: space-around;
-    font-size: 125%;
+    font-size: 18px;
 }
 
 .menu__item {
-    color: blueviolet;
+    color: blue;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .hamburger-menu {
         display: flex;
         justify-content: flex-end;
-        padding: 1%;
+        margin-right: 8%;
     }
-    /* скрываем чекбокс */
     .menu__toggle {
         opacity: 0;
     }
-    /* стилизуем кнопку */
     .menu__btn {
         display: flex;
         align-items: center;
@@ -79,7 +77,6 @@ body {
         cursor: pointer;
         z-index: 1;
     }
-    /* добавляем "гамбургер" */
     .menu__btn>span,
     .menu__btn>span::before,
     .menu__btn>span::after {
@@ -97,7 +94,6 @@ body {
         content: '';
         top: 8px;
     }
-    /* контейнер меню */
     .menu__box {
         display: block;
         position: fixed;
@@ -111,7 +107,6 @@ body {
         background-color: #ECEFF1;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     }
-    /* элементы меню */
     .menu__item {
         display: block;
         padding: 12px 24px;
@@ -137,11 +132,7 @@ body {
     }
     .menu__toggle:checked~.menu__box {
         visibility: visible;
-    }
-    @media screen and (max-width: 500px) {
-        .menu__toggle:checked~.menu__box {
-            width: 175px;
-        }
+        width: 175px;
     }
     .menu__btn>span,
     .menu__btn>span::before,
@@ -166,26 +157,13 @@ body {
     flex: 1 0 auto;
 }
 
-@media screen and (max-width: 620px) {
-    .content {
-        flex-direction: column
-    }
-}
-
 .sidebar {
     display: flex;
     background-image: url(./images/base.png);
     height: 250px;
     color: white;
     align-items: center;
-    justify-content: center;
-}
-
-@media screen and (max-width: 620px) {
-    .sidebar {
-        flex-direction: column;
-        justify-content: space-evenly
-    }
+    padding: 2%;
 }
 
 .sidebar-item1 {
@@ -201,17 +179,11 @@ body {
 }
 
 .main {
-    font-size: 200%;
+    font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     width: 50%;
     padding: 5% 5% 20% 8%;
-}
-
-@media screen and (max-width: 620px) {
-    .main {
-        width: 90%;
-        padding: 5% 5% 20% 5%;
-    }
+    text-align: center;
 }
 
 .article {
@@ -223,14 +195,6 @@ body {
     padding: 5% 4% 10% 0%;
 }
 
-@media screen and (max-width: 620px) {
-    .article {
-        width: 94%;
-        padding: 5% 3% 10% 3%;
-        align-items: center;
-    }
-}
-
 .signs {
     padding-top: 5%;
     width: 175px;
@@ -239,13 +203,59 @@ body {
 .count {
     display: flex;
     flex-direction: row;
-    font-size: 200%;
+    font-size: 32px;
     align-items: center;
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 620px) {
+    .content {
+        flex-direction: column
+    }
+    .sidebar {
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+    .sidebar-item1,
+    .sidebar-item2 {
+        width: 100%;
+    }
+    .count {
+        padding-left: 0;
+    }
+    .main {
+        width: 90%;
+        padding: 5% 5% 20% 5%;
+    }
+    .article {
+        width: 94%;
+        padding: 5% 3% 10% 3%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .count {
+        flex-direction: column;
+    }
+    .sidebar {
+        height: 350px;
+    }
+    .font1 {
+        text-align: center;
+    }
+    .sidebar-item1,
+    .sidebar-item2 {
+        flex-direction: column;
+    }
+    .count {
+        padding-left: 0;
+    }
 }
 
 .font1 {
     flex-direction: column;
-    font-size: 50%;
+    font-size: 16px;
 }
 
 .contact {
@@ -256,8 +266,9 @@ body {
 }
 
 h2 {
-    font-size: 250%;
+    font-size: 40px;
     padding: 5% 0 2% 0;
+    text-align: center;
 }
 
 p {
@@ -295,4 +306,5 @@ p {
 
 .rights {
     color: gray;
+    text-align: center;
 }

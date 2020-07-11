@@ -173,6 +173,7 @@ input {
     font-size: 18px;
     color: gray;
     text-align: center;
+    padding: 0 20%;
 }
 
 .exchange3 {
@@ -189,6 +190,11 @@ input {
 }
 
 @media screen and (max-width: 600px) {
+    .tab-menu {
+        clear: both;
+        width: 100%;
+        text-align: center;
+    }
     .menu-item {
         display: block;
     }
@@ -208,6 +214,7 @@ input {
     }
     .exchange1 {
         font-size: 18px;
+        padding: 3% 20% 1% 20%;
     }
     .exchange3 {
         font-size: 14px;
