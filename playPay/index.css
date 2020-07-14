@@ -9,7 +9,6 @@ body {
     background-image: url(./images/US_US-NY_NYC_1.jpg);
     size: cover;
     background-repeat: no-repeat;
-    background-color: transparent;
 }
 
 .clearfix ::after {
@@ -24,9 +23,7 @@ body {
     min-height: 100%;
 }
 
-.header {
-    background-color: white;
-}
+
 
 .active {
     display: block;
