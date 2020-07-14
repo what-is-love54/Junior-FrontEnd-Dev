@@ -73,7 +73,8 @@ body {
     background-color: #CFD8DC;
 }
 
-.menu__toggle:checked~.menu__btn>span {
+
+/* .menu__toggle:checked~.menu__btn>span {
     transform: rotate(45deg);
 }
 
@@ -128,7 +129,7 @@ body {
 
 .menu__item {
     transition-duration: .25s;
-}
+} */
 
 .fon {
     width: 100%;
