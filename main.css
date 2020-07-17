@@ -1,444 +1,444 @@
-																																        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-																																        /** **/
-																																        
-																																        .wrapper {
-																																            margin-left: 10%;
-																																            margin-right: 10%;
-																																        }
-																																        
-																																        .header {
-																																            display: flex;
-																																            flex-direction: row;
-																																            justify-content: space-between;
-																																            align-content: center;
-																																            align-items: center;
-																																            height: 5em;
-																																            margin: 0em 3em 0em 3em;
-																																        }
-																																        
-																																        .header__logo {
-																																            display: flex;
-																																            flex-direction: row;
-																																            justify-content: flex-start;
-																																            align-content: center;
-																																        }
-																																        
-																																        .header__menu {
-																																            display: flex;
-																																            flex-direction: row;
-																																            align-content: flex-end;
-																																            justify-content: space-between;
-																																        }
-																																        
-																																        #menu__toggle {
-																																            opacity: 0;
-																																        }
-																																        
-																																        .menu__btn {
-																																            display: flex;
-																																            /* используем flex для центрирования содержимого */
-																																            align-items: center;
-																																            /* центрируем содержимое кнопки */
-																																            position: relative;
-																																            width: 30px;
-																																            cursor: pointer;
-																																            z-index: 1;
-																																        }
-																																        
-																																        .menu__btn>span,
-																																        .menu__btn>span::before,
-																																        .menu__btn>span::after {
-																																            display: block;
-																																            position: absolute;
-																																            width: 100%;
-																																            height: 2px;
-																																            background-color: #616161;
-																																        }
-																																        
-																																        .menu__btn>span::before {
-																																            content: '';
-																																            top: -8px;
-																																        }
-																																        
-																																        .menu__btn>span::after {
-																																            content: '';
-																																            top: 8px;
-																																        }
-																																        /* контейнер меню */
-																																        
-																																        .menu__box {
-																																            display: flex;
-																																            position: relative;
-																																            visibility: hidden;
-																																            top: 0;
-																																            margin: 0;
-																																            list-style: none;
-																																            text-align: center;
-																																            padding-left: 0em;
-																																        }
-																																        /* элементы меню */
-																																        
-																																        .menu__item {
-																																            display: block;
-																																            padding: 0.6em 0.6em;
-																																            color: #333;
-																																            font-family: 'Playfair Display', serif;
-																																            font-size: 1em;
-																																            font-weight: 400;
-																																            text-decoration: none;
-																																        }
-																																        
-																																        .menu__item:hover {
-																																            background-color: #CFD8DC;
-																																        }
-																																        
-																																        #menu__toggle:checked~.menu__btn>span {
-																																            transform: rotate(45deg);
-																																        }
-																																        
-																																        #menu__toggle:checked~.menu__btn>span::before {
-																																            top: 0;
-																																            transform: rotate(0);
-																																        }
-																																        
-																																        #menu__toggle:checked~.menu__btn>span::after {
-																																            top: 0;
-																																            transform: rotate(90deg);
-																																        }
-																																        
-																																        #menu__toggle:checked~.menu__box {
-																																            visibility: visible;
-																																            left: 0;
-																																        }
-																																        
-																																        .menu__btn>span,
-																																        .menu__btn>span::before,
-																																        .menu__btn>span::after {
-																																            transition-duration: .25s;
-																																        }
-																																        
-																																        .menu__box {
-																																            transition-duration: .25s;
-																																            justify-content: space-between;
-																																        }
-																																        
-																																        .menu__item {
-																																            transition-duration: .25s;
-																																        }
-																																        
-																																        .main__cover {
-																																            background-color: #eeeeee;
-																																            display: flex;
-																																            flex-basis: content;
-																																            flex-wrap: wrap;
-																																            height: 20em;
-																																        }
-																																        
-																																        .main__text-content {
-																																            background-color: #f6f6f6;
-																																            display: flex;
-																																            flex-direction: row;
-																																            justify-content: space-around;
-																																            padding: 1em;
-																																            text-align: center;
-																																        }
-																																        
-																																        .main__quote {
-																																            display: flex;
-																																            flex-direction: row;
-																																            justify-content: flex-start;
-																																            align-items: flex-start;
-																																            text-align: left;
-																																            font-family: 'Playfair Display', serif;
-																																            font-size: 0.7em;
-																																            padding: 2em;
-																																            width: 30%
-																																        }
-																																        
-																																        .main__description {
-																																            display: flex;
-																																            flex-direction: column;
-																																            justify-content: flex-end;
-																																            align-items: center;
-																																            text-align: left;
-																																            font-family: 'Playfair Display', serif;
-																																            font-size: 0.7em;
-																																            overflow-wrap: break-word;
-																																            padding: 2em;
-																																            width: 40%;
-																																        }
-																																        
-																																        .main__description>img {
-																																            padding: 1em;
-																																            display: flex;
-																																            align-content: flex-start;
-																																            padding-top: 2em;
-																																            align-self: self-start;
-																																            max-width: -webkit-fill-available;
-																																        }
-																																        
-																																        .main__statistics {
-																																            background-image: url("/pics/pattern\ bg.png");
-																																            display: flex;
-																																            justify-content: space-around;
-																																            flex-direction: row;
-																																            height: 13em;
-																																            font-family: 'WorkSans Medium', serif;
-																																            color: lightgray;
-																																        }
-																																        
-																																        .main__statistics-content {
-																																            display: flex;
-																																            justify-content: space-between;
-																																            align-items: center;
-																																        }
-																																        
-																																        .statistics__content {
-																																            display: flex;
-																																            justify-content: space-between;
-																																            align-items: center;
-																																            font-size: 0.6em;
-																																        }
-																																        
-																																        .statistics__content>img {
-																																            padding: 2em;
-																																        }
-																																        
-																																        .contact__us-info {
-																																            background-color: #f6f6f6;
-																																            height: 17em;
-																																            display: flex;
-																																            flex-direction: column;
-																																            align-items: center;
-																																            overflow-wrap: break-word;
-																																            padding-top: 2em;
-																																        }
-																																        
-																																        .contact__us-info>h1 {
-																																            font-size: 1.5em;
-																																        }
-																																        
-																																        .contact__us-info>p {
-																																            font-size: 1em;
-																																            width: 70%;
-																																            text-align: center;
-																																            overflow-wrap: break-word;
-																																        }
-																																        
-																																        .contact__us-btn {
-																																            height: 2em;
-																																            width: 7em;
-																																            background-color: #252525;
-																																            color: #f6f6f6;
-																																            display: flex;
-																																            justify-content: center;
-																																            align-items: center;
-																																            font-family: 'Playfair Display', serif;
-																																            font-size: 0.7em;
-																																            padding: 0.5em;
-																																        }
-																																        
-																																        .footer__main {
-																																            background-color: #ebebeb;
-																																            display: flex;
-																																            flex-direction: column;
-																																            align-items: center;
-																																            align-content: center;
-																																            justify-content: space-between;
-																																            color: #999999;
-																																        }
-																																        
-																																        .footer__social {
-																																            display: flex;
-																																            flex-direction: row;
-																																            align-content: center;
-																																            justify-content: space-between;
-																																        }
-																																        
-																																        .footer__social>i {
-																																            display: flex;
-																																            flex-direction: row;
-																																            align-content: space-between;
-																																            padding: 0.5em;
-																																            margin-top: 2em;
-																																        }
-																																        
-																																        .footer__rights {
-																																            text-align: center;
-																																            margin: 1em;
-																																        }
-																																        /*----------Media-Querie's----------------*/
-																																        
-																																        @media screen and (max-width: 1199px) {}
-																																        
-																																        @media screen and (max-width: 991px) {}
-																																        
-																																        @media screen and (max-width: 650px) {
-																																            .wrapper {
-																																                margin-left: 0%;
-																																                margin-right: 0%;
-																																            }
-																																            .main__statistics {
-																																                flex-direction: column;
-																																                max-width: -webkit-fill-available;
-																																            }
-																																            .main__text-content {
-																																                display: flex;
-																																                flex-direction: column;
-																																            }
-																																            .menu__item {
-																																                display: block;
-																																                padding: 0.2em 0.2em;
-																																                color: #333;
-																																                font-family: 'Playfair Display', serif;
-																																                font-size: 0.9em;
-																																                font-weight: 100;
-																																                text-decoration: none;
-																																            }
-																																            .menu__btn {
-																																                padding-left: 1%;
-																																                height: 1.5em;
-																																                width: 1.5em;
-																																            }
-																																            .main__quote {
-																																                display: flex;
-																																                justify-content: center;
-																																                width: 80%;
-																																                padding: unset;
-																																            }
-																																            .main__description {
-																																                width: 90%;
-																																                justify-content: center;
-																																                padding: 0%;
-																																            }
-																																            .main__statistics {
-																																                display: flex;
-																																                flex-flow: column wrap;
-																																                align-items: center;
-																																                height: 12em;
-																																                font-size: 1em;
-																																            }
-																																            .statistics__content {
-																																                display: flex;
-																																                width: min-content;
-																																            }
-																																        }
-																																        
-																																        @media screen and (max-width: 320px) {
-																																            .header {
-																																                display: flex;
-																																                flex-direction: column;
-																																                justify-content: space-around;
-																																                align-content: center;
-																																                align-items: center;
-																																                height: 17em;
-																																            }
-																																            .header__logo {
-																																                display: flex;
-																																                flex-direction: row;
-																																                justify-content: flex-start;
-																																                align-content: center;
-																																                padding: 0em;
-																																            }
-																																            .menu__box {
-																																                display: block;
-																																                position: relative;
-																																                visibility: hidden;
-																																                top: 1.4em;
-																																                margin: 0;
-																																                list-style: none;
-																																                text-align: center;
-																																                padding-left: 0em;
-																																            }
-																																            .menu__btn {
-																																                display: flex;
-																																                /* используем flex для центрирования содержимого */
-																																                align-items: center;
-																																                /* центрируем содержимое кнопки */
-																																                position: relative;
-																																                width: 30px;
-																																                cursor: pointer;
-																																                z-index: 1;
-																																            }
-																																            .main__statistics {
-																																                height: 25em;
-																																            }
-																																            .header__menu {
-																																                display: flex;
-																																                flex-direction: column-reverse;
-																																                align-content: center;
-																																                justify-content: space-between;
-																																                padding-right: 4%;
-																																                align-items: center;
-																																            }
-																																            .menu__item {
-																																                padding: 0.5em 0.5em;
-																																            }
-																																            .contact__us-info>h1 {
-																																                font-size: 1em;
-																																                text-align: center;
-																																            }
-																																        }
-																																        
-																																        @media screen and (max-width: 210px) {
-																																            .main__statistics {
-																																                height: 40em;
-																																            }
-																																            .statistics__content {
-																																                display: flex;
-																																                flex-direction: column;
-																																                justify-content: center;
-																																            }
-																																            .statistics__content>img {
-																																                padding: 0em 0em 2em 0em;
-																																            }
-																																            .statistics__content>span {
-																																                display: flex;
-																																                text-align: center;
-																																            }
-																																            .contact__us-info {
-																																                padding-bottom: 2em;
-																																            }
-																																            .footer__social {
-																																                display: flex;
-																																                flex-flow: column wrap;
-																																                align-items: space-evenly;
-																																                height: 10em;
-																																            }
-																																            .footer__social>i {
-																																                display: flex;
-																																                flex-flow: column wrap;
-																																                justify-content: space-between;
-																																                align-items: center;
-																																                padding: 0.6em;
-																																                margin-top: 1em;
-																																            }
-																																            @media screen and (max-width: 140px) {
-																																                .main__quote {
-																																                    font-size: 0.6em;
-																																                    width: 100%;
-																																                    padding: unset;
-																																                }
-																																                .contact__us-info {
-																																                    height: 0%;
-																																                }
-																																                .footer__social {
-																																                    display: flex;
-																																                    flex-flow: column;
-																																                    align-items: space-evenly;
-																																                    height: 10em;
-																																                }
-																																                .footer__social>i {
-																																                    display: flex;
-																																                    flex-flow: column wrap;
-																																                    justify-content: space-between;
-																																                    align-items: center;
-																																                    padding: 0.1em;
-																																                    margin-top: 0.5em;
-																																                    width: 0.3em;
-																																                }
-																																                .footer__rights {
-																																                    font-size: 0.6em;
-																																                }
-																																            }
-																																        }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+/** **/
+
+.wrapper {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	height: 5em;
+	margin: 0em 3em 0em 3em;
+}
+
+.header__logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+.header__menu {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+	justify-content: space-between;
+}
+
+#menu__toggle {
+	opacity: 0;
+}
+
+.menu__btn {
+	display: flex;
+	/* используем flex для центрирования содержимого */
+	align-items: center;
+	/* центрируем содержимое кнопки */
+	position: relative;
+	width: 30px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #616161;
+}
+
+.menu__btn>span::before {
+	content: '';
+	top: -8px;
+}
+
+.menu__btn>span::after {
+	content: '';
+	top: 8px;
+}
+/* контейнер меню */
+
+.menu__box {
+	display: flex;
+	position: relative;
+	visibility: hidden;
+	top: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	padding-left: 0em;
+}
+/* элементы меню */
+
+.menu__item {
+	display: block;
+	padding: 0.6em 0.6em;
+	color: #333;
+	font-family: 'Playfair Display', serif;
+	font-size: 1em;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.menu__item:hover {
+	background-color: #CFD8DC;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+	transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+	top: 0;
+	transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+	visibility: visible;
+	left: 0;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+	transition-duration: .25s;
+}
+
+.menu__box {
+	transition-duration: .25s;
+	justify-content: space-between;
+}
+
+.menu__item {
+	transition-duration: .25s;
+}
+
+.main__cover {
+	background-color: #eeeeee;
+	display: flex;
+	flex-basis: content;
+	flex-wrap: wrap;
+	height: 20em;
+}
+
+.main__text-content {
+	background-color: #f6f6f6;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1em;
+	text-align: center;
+}
+
+.main__quote {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	font-family: 'Playfair Display', serif;
+	font-size: 0.7em;
+	padding: 2em;
+	width: 30%
+}
+
+.main__description {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: left;
+	font-family: 'Playfair Display', serif;
+	font-size: 0.7em;
+	overflow-wrap: break-word;
+	padding: 2em;
+	width: 40%;
+}
+
+.main__description>img {
+	padding: 1em;
+	display: flex;
+	align-content: flex-start;
+	padding-top: 2em;
+	align-self: self-start;
+	max-width: -webkit-fill-available;
+}
+
+.main__statistics {
+	background-image: url("/pics/pattern\ bg.png");
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	height: 13em;
+	font-family: 'WorkSans Medium', serif;
+	color: lightgray;
+}
+
+.main__statistics-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.statistics__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.6em;
+}
+
+.statistics__content>img {
+	padding: 2em;
+}
+
+.contact__us-info {
+	background-color: #f6f6f6;
+	height: 17em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-wrap: break-word;
+	padding-top: 2em;
+}
+
+.contact__us-info>h1 {
+	font-size: 1.5em;
+}
+
+.contact__us-info>p {
+	font-size: 1em;
+	width: 70%;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+
+.contact__us-btn {
+	height: 2em;
+	width: 7em;
+	background-color: #252525;
+	color: #f6f6f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 0.7em;
+	padding: 0.5em;
+}
+
+.footer__main {
+	background-color: #ebebeb;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+	color: #999999;
+}
+
+.footer__social {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.footer__social>i {
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	padding: 0.5em;
+	margin-top: 2em;
+}
+
+.footer__rights {
+	text-align: center;
+	margin: 1em;
+}
+/*----------Media-Querie's----------------*/
+
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 650px) {
+	.wrapper {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.main__statistics {
+		flex-direction: column;
+		max-width: -webkit-fill-available;
+	}
+	.main__text-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu__item {
+		display: block;
+		padding: 0.2em 0.2em;
+		color: #333;
+		font-family: 'Playfair Display', serif;
+		font-size: 0.9em;
+		font-weight: 100;
+		text-decoration: none;
+	}
+	.menu__btn {
+		padding-left: 1%;
+		height: 1.5em;
+		width: 1.5em;
+	}
+	.main__quote {
+		display: flex;
+		justify-content: center;
+		width: 80%;
+		padding: unset;
+	}
+	.main__description {
+		width: 90%;
+		justify-content: center;
+		padding: 0%;
+	}
+	.main__statistics {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		height: 12em;
+		font-size: 1em;
+	}
+	.statistics__content {
+		display: flex;
+		width: min-content;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+		height: 17em;
+	}
+	.header__logo {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-content: center;
+		padding: 0em;
+	}
+	.menu__box {
+		display: block;
+		position: relative;
+		visibility: hidden;
+		top: 1.4em;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		padding-left: 0em;
+	}
+	.menu__btn {
+		display: flex;
+		/* используем flex для центрирования содержимого */
+		align-items: center;
+		/* центрируем содержимое кнопки */
+		position: relative;
+		width: 30px;
+		cursor: pointer;
+		z-index: 1;
+	}
+	.main__statistics {
+		height: 25em;
+	}
+	.header__menu {
+		display: flex;
+		flex-direction: column-reverse;
+		align-content: center;
+		justify-content: space-between;
+		padding-right: 4%;
+		align-items: center;
+	}
+	.menu__item {
+		padding: 0.5em 0.5em;
+	}
+	.contact__us-info>h1 {
+		font-size: 1em;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 210px) {
+	.main__statistics {
+		height: 40em;
+	}
+	.statistics__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.statistics__content>img {
+		padding: 0em 0em 2em 0em;
+	}
+	.statistics__content>span {
+		display: flex;
+		text-align: center;
+	}
+	.contact__us-info {
+		padding-bottom: 2em;
+	}
+	.footer__social {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: space-evenly;
+		height: 10em;
+	}
+	.footer__social>i {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.6em;
+		margin-top: 1em;
+	}
+	@media screen and (max-width: 140px) {
+		.main__quote {
+			font-size: 0.6em;
+			width: 100%;
+			padding: unset;
+		}
+		.contact__us-info {
+			height: 0%;
+		}
+		.footer__social {
+			display: flex;
+			flex-flow: column;
+			align-items: space-evenly;
+			height: 10em;
+		}
+		.footer__social>i {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0.1em;
+			margin-top: 0.5em;
+			width: 0.3em;
+		}
+		.footer__rights {
+			font-size: 0.6em;
+		}
+	}
+}
