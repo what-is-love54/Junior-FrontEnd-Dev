@@ -5,246 +5,101 @@
 html,
 body {
 	height: 100%;
-	font-family:Verdana;
+	font-family: Verdana, arial, sans-serif;
 }
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/background1.jpg);
+	background-repeat: no-repeat; 
+    background-position: top center;
+    background-attachment: fixed;
+    min-height: 668px;
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;
-}
-
-footer {
-	flex: 0 0 auto;
+	height: 100%;
 }
 
 .container {
-	width: 100%;
-	max-width: 1240px;
+	max-width: 1147px;
 	margin: 0 auto;
 }
 
-.header__logo {
-	padding-left: 81px;
+.header {
+	background-color: white;
+	border-bottom: 1px solid #97a8c4;
+	padding: 1% 5%;
 }
 
 .header__inner {
-	display:flex;
+	display: flex;
 	justify-content: space-between;
-
-	padding-bottom: 12px;
-	padding-top: 27px;
 	align-items: center;
 }
+
 .nav {
 	font-size: 24px;
-	font-family: Verdana;
-	background-color: #fafbfb;
+	display: flex;
 }
 
 .nav__link {
 	color: #2a2a29;
 	text-decoration: none;
+	font-weight: 400;
+	margin-left: 25px;
+}
+
+.main__transaction {
+    background-color: #fff;
+    opacity: 0.78;
+    border: 1px solid #a6b1c6;
+    border-radius:9px;
+    display: flex;
+    max-width: 80%;
+	margin: 6% auto;
+	padding: 3% 5%;
 }
 
 
-.intro {
-	border-top: 1px solid #97a8c4;
-	background-image: url(../img/background1.jpg);
-	background-repeat: no-repeat; 
-	background-size: cover;
-	flex: 1 0 auto;
+
+.transaction__elements {
+	display: flex; 
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position:relative;
 }
 
-.transaction {
-	background-color: #fff;
-	opacity: 0.78;
-	max-width: 975px;
-	max-height: 513px;
-  	justify-content: center;
-  	border: 1px solid #a6b1c6;
-  	border-radius:9px;
-	/*position: absolute;*/
-	display: flex;
- 	align-items: center;
-	width: 979px;
-	height: 517px;
-	align-self: center;
-	margin-top: 90px;
-	font-weight: 24px;
-}
-
-.transaction{
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-around;
-}
-
-.transaction_left {
-	max-width: 281px;
-	max-height: 325px;
-	text-align: left;
-}
-
-.transaction_right {
-	max-width: 281px;
-	max-height: 325px;
-	text-align: left;
-}
-
-.transaction_input-pole {
-	width: 241px;
-	height: 36px;
-	border-color: #97a8c4;
-}
-
-.transaction_left-give {
-	padding-top: 30px;
-	font-size: 24px;
-	padding-left: 9px;
-}
-
-.transaction_right-get {
-	padding-top: 30px;
-	font-size: 24px;
-	padding-left: 8px;
-}
-
-
-.transaction_left-account.number {
-	font-size: 18px;
-	width: 242px;
-	height: 136px;
-}
-
-.transaction_right-account.number {
-font-size: 18px;
-width: 242px;
-height: 136px;
-}
-
-.transaction_center {
-	padding-top: 100px;
-}
-
-
-.account_number-left {
-	margin-top: 29px;
-	margin-bottom: 8px;
-}
-
-.account_number-right {
-	margin-top: 41px;
-	margin-bottom: 8px;
-}
-
-.img_left {
-	padding-left: 26px;
-}
-
-.img_right {
-	padding-right: 5px;
-}
-
-.transaction_data-left {
-	padding-left: 31px;
-}
-
-.transaction_data-right {
-	padding-left: 5px;
-}
-
-.transaction_left-sum {
-	padding-top: 21px;
-	padding-bottom: 10px;
-}
-
-.transaction_right-sum {
-	padding-top: 21px;
-	padding-bottom: 10px;
-}
-
-.transaction_input-pole.down {
-	padding-bottom: 11px;
-}
-
-#uah_label {
-	display: none;
-}
-
-#uah_label_style {
-	text-align: center;
-	display: block;
-	width: 41px;
-	height: 22px;
-	background-color: white;
-	border: 1px solid #aab4be ;
-}
-
-#uah_label_style:checked {
-	background-color: #fcf7c0;
-}
-
-#rub_label {
-	display: none;
-}
-
-#rub_label_style {
-	text-align: center;
-	display: block;
-	width: 41px;
-	height: 22px;
-	background-color: white;
-	border: 1px solid #aab4be ;
+.transaction__left {
 	float: left;
+
 }
 
-#run_label_style:checked {
-	background-color: #fcf7c0;
+.transaction__right {
+	float: right;
+
 }
 
-
-#usd_label {
-	display: none;
+.transaction_action {
+	border-bottom: 1px solid #e1e1e2;
 }
 
-#usd_label_style {
-	text-align: center;
-	display: block;
-	width: 41px;
-	height: 22px;
-	background-color: white;
-	border: 1px solid #aab4be ;
-	float: left;
-}
-
-#usd_label_style:checked {
-	background-color: #fcf7c0;
-}
-
-hr {
-	color: #e1e2e2;
-	width: 281px;
-	margin-bottom:35px;
-}
-
-.footer__text {
-	font-size: 14px;
-}
 
 .footer {
-    text-align: center;
-    padding-bottom: 20px;
-	width: 100%;
-	padding-top: 10px;
-	background-color: #53504f;
-	font-size: 14px;
-}
-
-footer {
 	flex: 0 0 auto;
-	opacity: .8;
-}
-
-span {
+	background-color: rgb(65, 65, 65);
+    opacity: .8;
+    text-align: center;
+	padding: 1% 0;
 	color: white;
 }

@@ -4,97 +4,183 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="./css/styles.css">
+	<title>PlayPay - Автоматичний обмiнник.</title>
+	
+	
+	<link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="container">
-				<div class="header__inner">
-					<div class="header__logo">
-						<a href="#"><img src="img/logo.png" alt="Логотип"></a>
-					</div>
-					<nav class="header__nav nav">
-						<a class="nav__link" href="#">Меню</a>
-						<a class="nav__link" href="#">Контакти</a>
-						<a class="nav__link" href="#">Відгуки</a>
-					</nav>
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<img src="img/logo.png" alt="logo">
 				</div>
+				<nav class="nav">
+					<a href="#" class="nav__link">Меню</a>
+					<a href="#" class="nav__link">Контакти</a>
+					<a href="#" class="nav__link">Відгуки</a>
+				</nav>
 			</div>
-		</header>
-		<div class="content">
-			<div class="intro__main">
-				<div class="transaction">
-
-
-					<div class="transaction_left">
-						<div class="transaction_left-give">Віддаєте:</div>
-						<hr>
-						<img src="img/advcash.png" alt="advcash" class="img_left">
-						<div class="transaction_data-left">
-							<div class="transaction_left-account.number">
-								<div class="account_number-left">Номер рахунку:</div>
-								<input type="number" class="transaction_input-pole">
-							</div>
-							<div>
-								<div class="transaction_left-sum">Сума:</div>
-								<input type="number" class="transaction_input-pole">
-							</div>
-						</div>
-						<label for="usd_label" id="usd_label_style">USD</label>
-						<input type="checkbox" name="currency" id="usd_label">
-						<div class="currency_block">
-
-						</div>
-						<label for="rub_label" id="rub_label_style">RUB</label>
-						<input type="checkbox" name="currency" id="rub_label">
-						<div class="currency_block">
-
-						</div>
-
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="main__transaction">
+				<div class="transaction__elements">
+					<div class="transaction__left transaction__unit">
+						<span class="transaction_action">Віддаєте</span>
+						<img src="img/advcash.png" alt="Advcash">
 					</div>
-					<div class="transaction_center">
+					<div class="transaction__center transaction__unit">
 						<img src="img/transfer.png" alt="transfer">
 					</div>
-					<div class="transaction_right">
-						<div class="transaction_right-get">Отримуєте:</div>
-						<hr>
-						<img src="img/privat24.png" alt="privat24" class="img_right">
-						<div class="transaction_data-right">
-							<div class="transaction_right-account.number">
-								<div class="account_number-right">Номер рахунку:</div>
-								<input type="number" class="transaction_input-pole">
-							</div>
-							<div class="">
-								<div class="transaction_left-sum">Буде зараховано:</div>
-								<input type="number" class="transaction_input-pole transaction_input-pole.down">
-							</div>
-							<div>
-								<label for="uah_label" id="uah_label_style">UAH</label>
-								<input type="checkbox" name="currency" id="uah_label">
-								<div class="currency_block">
-
-								</div>
-
-							</div>
-						</div>
+					<div class="transaction__right transaction__unit">
+						<span class="transaction_action">Отримуєте</span>
+						<img src="img/privat24.png" alt="Privat24">
 					</div>
 				</div>
 			</div>
+		</div>
+	</main>
+	<!--<footer class="footer">
+		<div class="footer__background">
+			<span>2015 PlayPay LTD</span>
+		</div>
+	</footer>-->
+</div>
+</body>
+
+</html>
+
+
+
+
+<!--<header class="header">
+		<div class="header__inner">
+				<div class="logo">
+					<a href="#" class="logo"><img src="img/logo.png" class="logo" alt="Логотип"></a>
+				</div>
+			<nav>
+				<ul>
+					<li class="nav__link"><a href="#">Меню</a></li>
+					<li class="nav__link"><a href="#">Контакти</a></li>
+					<li class="nav__link"><a href="#">Відгуки</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="content">
+		<div class="transaction">
+			<div class="transaction_container">
+				<div class="transaction_left">
+					<span>Віддаєте</span>
+				</div>
+				<img src="img/advcash.png" alt="advcash" id="advcash">
+				<div class="transaction_left-account.number">
+					<div class="account_number-left">Номер рахунку:</div>
+					<input type="number" class="transaction_input-pole">
+				</div>
+				<div>
+					<div class="transaction_left-sum">Сума:</div>
+					<input type="number" class="transaction_input-pole">
+				</div>
+				<label for="usd_label" id="usd_label_style" ch class="money">USD</label>
+				<input type="radio" name="currency" id="usd_label">
+				<div class="currency_block">
+		
+				</div>
+				<label for="rub_label" id="rub_label_style" class="money">RUB</label>
+				<input type="radio" name="currency" id="rub_label">
+
+
+
+
+				<div class="transaction_center">
+					<img src="img/transfer.png" alt="">
+				</div>
+				<div class="transaction_right">
+					<span>Віддаєте</span>
+				</div>
+				<img src="img/advcash.png" alt="advcash" id="advcash">
+				<div class="transaction_left-account.number">
+					<div class="account_number-left">Номер рахунку:</div>
+					<input type="number" class="transaction_input-pole">
+				</div>
+				<div>
+					<div class="transaction_left-sum">Сума:</div>
+					<input type="number" class="transaction_input-pole">
+				</div>
+				<label for="usd_label" id="usd_label_style" ch class="money">USD</label>
+				<input type="radio" name="currency" id="usd_label">
+				<div class="currency_block">
+		
+				</div>
+				<label for="rub_label" id="rub_label_style" class="money">RUB</label>
+				<input type="radio" name="currency" id="rub_label">
+				</div>
+			</div>
+		</div>
+	</div>
+
+ <div class="transaction_left">
+	<div class="left__upper">
+		Віддаєте
+	</div>
+	<div class="left__footer">
+		<img src="img/advcash.png" alt="advcash" id="advcash">
+		<div class="transaction_left-account.number">
+			<div class="account_number-left">Номер рахунку:</div>
+			<input type="number" class="transaction_input-pole">
+		</div>
+		<div>
+			<div class="transaction_left-sum">Сума:</div>
+			<input type="number" class="transaction_input-pole">
+		</div>
+		<label for="usd_label" id="usd_label_style" ch class="money">USD</label>
+		<input type="radio" name="currency" id="usd_label">
+		<div class="currency_block">
+
+		</div>
+		<label for="rub_label" id="rub_label_style" class="money">RUB</label>
+		<input type="radio" name="currency" id="rub_label">
+		<div class="currency_block">
+		</div>
+	</div>
+</div> -->
+
+<!--
+		<div class="transaction_left">
+			<div class="transaction_left-give">Віддаєте:</div>
+			<img src="img/advcash.png" alt="advcash" class="img_left">
+			<div class="transaction_data-left">
 
 
 
 		</div>
-		<footer class="newFooter">
-			<div class="footer">
-				<div class="footer__background">
-					<span>2015 PlayPay LTD</span>
+		<div class="transaction_center">
+			<img src="img/transfer.png" alt="transfer">
+		</div>
+		<div class="transaction_right">
+			<div class="transaction_right-get">Отримуєте:</div>
+			<hr>
+			<img src="img/privat24.png" alt="privat24" class="img_right">
+			<div class="transaction_data-right">
+				<div class="transaction_right-account.number">
+					<div class="account_number-right">Номер рахунку:</div>
+					<input type="number" class="transaction_input-pole">
+				</div>
+				<div class="">
+					<div class="transaction_left-sum">Буде зараховано:</div>
+					<input type="number" class="transaction_input-pole transaction_input-pole.down">
+				</div>
+				<div>
+					<label for="uah_label" id="uah_label_style">UAH</label>
+					<input type="radio" name="currency_1" id="uah_label">
 				</div>
 			</div>
-		</footer>
-	</div>
-</body>
+		</div>
 
-</html>
+
+-->

@@ -3,29 +3,103 @@
     padding: 0px;
     border: 0px;
     outline: 0px;
+    font-family: verdana;
 }
+
 html,
 body {
     height: 100%;
 	background-image: url(../img/background1.jpg);
 	background-repeat: no-repeat; 
-	background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    min-height: 668px;
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
-header{
-    background: #ffff;
-    box-shadow: 0 0 0 1px #a5b4cb;
-    max-width: 100%;     
-    padding: 27px 32px 14px 101px;
-    background: rgba( 255, 255, 255, 0.8);  
-} 
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 }
+
+header{
+    box-shadow: 0 0 0 1px #a5b4cb;
+    max-width: 100%;     
+    padding: 27px 32px 14px 101px;
+    background: rgba( 255, 255, 255, 0.8);
+} 
+
 .content {
     flex: 1 0 auto;
 }
+
+
+
+.transaction_container {
+    margin: 30px 66px 18px 54px;
+}
+
+.left__upper {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0px 169px 8px 9px;
+}
+
+.left__footer {
+    padding: 36px 0px 0px 26px;
+}
+
+#advcash {
+    padding-bottom: 29px;
+}
+
+.transaction_input-pole {
+    border: 1px solid #aab4be;
+}
+
+nav {
+    float: right;
+}
+
+.nav__link {
+    list-style-type: none;
+    font-size: 24px;
+    font-family: Verdana;
+    color: #2a2a29;
+    text-decoration: none;
+    display: inline;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    padding-top: 27px;
+}
+
+ul {
+    position: relative
+}
+
+.logo {
+    float: left;
+}
+
+.money {
+
+    text-align: center;
+    border: 1px solid #aab4be;
+    background-color: white;
+    display: block;
+    float: left;    
+}
+
+.money:checked {
+	background-color: #fcf7c0;
+}
+
+
+
+
+
 footer {
     flex: 0 0 auto;
     background-color: rgb(65, 65, 65);
@@ -33,4 +107,12 @@ footer {
     color: white;
     text-align: center;
     padding: 1% 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2a2a29
+}
+a:visited {
+    color: #2a2a29 ;
 }
