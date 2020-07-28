@@ -95,6 +95,7 @@ body {
     background-color: #d61414;
     padding: 30% 0%;
     width: 100%;
+    height: calc(100vh - 10%);
 }
 
 .description {
