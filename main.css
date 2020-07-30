@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 /** **/
-
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
 .wrapper {
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+.container {
+	margin: 0 10%;
 }
 
 .header {
@@ -14,6 +25,13 @@
 	align-items: center;
 	height: 5em;
 	margin: 0em 3em 0em 3em;
+}
+
+.content__title-quote {
+	font-family: 'PlayfairDisplay', serif;
+	font-weight: 300;
+	font-size: 24px;
+	text-align: left;
 }
 
 .header__logo {
@@ -79,7 +97,7 @@
 /* элементы меню */
 
 .menu__item {
-	display: block;
+	display: flex;
 	padding: 0.6em 0.6em;
 	color: #333;
 	font-family: 'Playfair Display', serif;
@@ -290,7 +308,7 @@
 		display: block;
 		padding: 0.2em 0.2em;
 		color: #333;
-		font-family: 'Playfair Display', serif;
+		font-family: 'PlayfairDisplay', serif;
 		font-size: 0.9em;
 		font-weight: 100;
 		text-decoration: none;
