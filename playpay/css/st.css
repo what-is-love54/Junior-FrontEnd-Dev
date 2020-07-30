@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+    height: 100%;
+    background-image: url(../img/background1.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.container {
+	max-width: 1147px;
+	margin: 0 auto;
+}
+.header {
+	background-color: white;
+	border-bottom: 1px solid #97a8c4;
+	padding: 1% 5%;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer {
+	flex: 0 0 auto;
+}

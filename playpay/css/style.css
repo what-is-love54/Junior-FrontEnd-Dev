@@ -8,20 +8,17 @@ body {
 	font-family: Verdana, arial, sans-serif;
 }
 
-*,
+/* *,
 *::before,
 *::after {
 	box-sizing: border-box;
-}
+} */
 
 body {
 	background-image: url(../img/background1.jpg);
 	background-repeat: no-repeat; 
     background-position: top center;
-    background-attachment: fixed;
     min-height: 668px;
-    position: relative;
-    -webkit-background-size: cover;
     background-size: cover;
 }
 
