@@ -1,0 +1,2 @@
+*[[:space:]].psd filter=lfs diff=lfs merge=lfs -text
+*[[:space:]].zip filter=lfs diff=lfs merge=lfs -text
