@@ -7,8 +7,8 @@
 	<title>PlayPay - Автоматичний обмiнник.</title>
 	
 	
-	<!-- <link rel="stylesheet" href="./css/style.css"> -->
-	<link rel="stylesheet" href="./css/st.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="./css/st.css"> -->
 </head>
 <body>
 <div class="wrapper">
@@ -19,9 +19,14 @@
 					<img src="img/logo.png" width="100%" alt="logo">
 				</div>
 				<nav class="nav">
-					<a href="#" class="nav__link">Меню</a>
-					<a href="#" class="nav__link">Контакти</a>
-					<a href="#" class="nav__link">Відгуки</a>
+					<div class="nav__burger">
+						<div class="burger"></div>
+					</div>
+					<div class="nav__item">
+						<a href="#" class="nav__link">Меню</a>
+						<a href="#" class="nav__link">Контакти</a>
+						<a href="#" class="nav__link">Відгуки</a>
+					</div>
 				</nav>
 			</div>
 		</div>
@@ -78,7 +83,7 @@
 					<div class="transaction__course">Поточний курс: 1 AdvCash USD = 26.9455 Приват24 UAH</div>
 					<div class="transaction__commission">З комісією Приват24 UAH - 10 UAH </div>
 					<button class="transaction__button">
-						<img src="img/arrows.png" width="20%" alt="">
+						<img src="img/arrows.png" alt="arrows" class="button__arrows">
 						<div class="button__text">Обміняти</div>
 					</button>
 				</div>
