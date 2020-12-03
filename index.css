@@ -12,6 +12,7 @@ body {
 	flex-direction: column;
   min-height: 100%;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .container {
@@ -195,7 +196,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   display: flex;
-  justify-content: inherit;
+  justify-content: space-around;
   width: 49%;
   min-width: 500px;
 }
@@ -246,13 +247,20 @@ footer {
 #contact-btn{
   display: none;
 }
-.button{
-  height: 55px;
-  width: 181px;
-  background-color: #252525;
-  color:#FFFFFF;
-  margin: auto;
-  margin-top: 38px;
+.button button {
+  width: 180px;
+  padding: 20px;
+  color: #fff;
+  background-color: black;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* height: 55px; */
+  /* width: 181px; */
+  /* background-color: #252525; */
+  /* color:#FFFFFF; */
+  /* margin: auto; */
+  /* margin-top: 38px; */
 }
 .label-btn{
   margin-top: 32px;
@@ -274,3 +282,9 @@ footer {
   text-align: center;
   margin: 0 auto 52px;
 }
+
+/* @media screen and (max-width: 1200px) {
+  header{
+    display: none;
+  }
+} */
