@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AwesomeProject.iml" filepath="$PROJECT_DIR$/.idea/modules/AwesomeProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AwesomeProject.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AwesomeProject.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/105285435/AwesomeProject.react-native-bootsplash.iml" filepath="$PROJECT_DIR$/.idea/modules/105285435/AwesomeProject.react-native-bootsplash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/616813523/AwesomeProject.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/616813523/AwesomeProject.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1012418660/AwesomeProject.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1012418660/AwesomeProject.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1632369782/AwesomeProject.react-native-linear-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/1632369782/AwesomeProject.react-native-linear-gradient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/615622456/AwesomeProject.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/615622456/AwesomeProject.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1371875379/AwesomeProject.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1371875379/AwesomeProject.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1300112421/AwesomeProject.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1300112421/AwesomeProject.react-native-screens.iml" />
+    </modules>
+  </component>
+</project>

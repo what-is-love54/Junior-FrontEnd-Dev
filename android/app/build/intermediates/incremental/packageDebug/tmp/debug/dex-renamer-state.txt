@@ -1,0 +1,4 @@
+#Wed Mar 03 12:45:40 EET 2021
+base.0=/home/sergiy/Documents/covid-19/test_projekt/AwesomeProject/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
