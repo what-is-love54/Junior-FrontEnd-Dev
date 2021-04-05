@@ -1,9 +1,6 @@
-import React, { useState, setState } from 'react';
-import { View, Text, AppRegistry, StatusBar, Image, TouchableOpacity,} from 'react-native';
+import React from 'react';
+import { Text, Image, TouchableOpacity } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
-
-
-
 
 const Button = ({
   disabled = false,
@@ -30,10 +27,6 @@ const Button = ({
   )
 }
 
-
-
-
-
 const styles = ScaledSheet.create({
   selectCountry: {
     // marginTop: '45@ms',
@@ -56,6 +49,5 @@ const styles = ScaledSheet.create({
     marginLeft: '14@ms',
   },
 })
-
 
 export default Button

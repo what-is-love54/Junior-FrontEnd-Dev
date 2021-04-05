@@ -1,14 +1,11 @@
 import React, { useState, setState } from 'react';
-import  Modal  from 'react-native-modal';
-import { View, Text, AppRegistry, StatusBar, Image, TouchableOpacity, } from 'react-native';
+import Modal from 'react-native-modal';
+import { View, Text, StatusBar, Image, Alert } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
 import RadioButton from "../button/check-box";
-import { SelectCountry } from "../modal/country";
 import Button from "../button/button";
-import MenuModal from "../modal/country";
-import styled from 'styled-components';
 import ButtonNext from "../button/button-next";
-
+import { Routes } from '../navigation/Routes';
 
 const item = [
   {
@@ -28,7 +25,7 @@ const item = [
   },
 ];
 
-const country = [
+const countryArray = [
   {
     id: 0,
     value: 'England',
@@ -61,7 +58,7 @@ const country = [
     id: 7,
     value: 'Poland',
   },
- 
+
 ];
 const language = [
   {
@@ -96,110 +93,121 @@ const language = [
     id: 7,
     value: 'Polish',
   },
- 
+
 ];
 
-
-
-
-
-const WelcomeScreen = () => {
+const WelcomeScreen = ({ navigation, route }) => {
 
   const [age, setAge] = useState(item.value)
   const [isModalVisible, setModalVisible] = useState(false);
   const [isModal, setModal] = useState(false);
-  const [count, setCount] = useState(country[0].value)
-  const [lang, setLang] = useState(language[0].value)
-
-
+  const [country, setCountry] = useState('')
+  const [lang, setLang] = useState('')
+  console.log(country)
   const selestLanguage = (language) => setLang(language.value);
-  const selectCountry = (country) => setCount(country.value);
+  const selectCountry = (country) => setCountry(country.value);
   const inc = (item) => setAge(item.value);
-  const toggleModal  = () => setModalVisible(!isModalVisible);
-  const langModal  = () => setModal(!isModal);
-  
+  const toggleModal = () => setModalVisible(!isModalVisible);
+  const langModal = () => setModal(!isModal);
 
-
-  
-
-  return ( 
-  <View style={styles.container}>
-    <View style={{ height: StatusBar.currentHeight }}>
-      <StatusBar barStyle='dark-content' translucent backgroundColor='transparent' />
-    </View>
-    <View style={styles.containerLogo}>
-      <Image source={require('../image/boot-splash/logo.png')} style={styles.imgLogo}   />
-    </View>
-    <Text style={styles.midText}>Stay safe</Text>
-    <View style={styles.checkBoxContainer}>
-      <Text style={styles.selectAge} >Please, select your age</Text>
-      <Image source={require('../image/emoji.png')} style={styles.imgEmoji} />
-    </View>
-    <View>
-      {
-        item.map((element) =>
-          <RadioButton
-            item={element}
-            key={element.id}
-            checked={age === element.value}
-            onChange={inc}
-            text={element.text}
-          />
-        )
-      }
-       </View>
-       <View style={styles.buttonContainer}>
-    <Button text={count} onPress={toggleModal} />
-    <Modal 
-    isVisible={isModalVisible}
-    style={styles.modal}
+  const goToHome = () => navigation.navigate('TabNavigator', {
+    screen: 'MainHome',
+    params: { country },
+  });
+  const createTwoButtonAlert = () =>
+    Alert.alert(
+      " ",
+      "А НІХУЯ )))",
+      [
+        { text: "OK", onPress: () => console.log("OK Pressed") }
+      ]
+    );
+  const modalCountry = () => (
+    <Modal
+      isVisible={isModalVisible}
+      style={styles.modal}
     >
-          <View style={styles.modalCountry}>
-          {
-        country.map((el) =>
-          <RadioButton
-            item={el}
-            key={el.id}
-            checked={count === el.value}
-            onChange={selectCountry}
-            text={el.value}
-          />
-        )
-      }
-            <Button text={"celect contry"} onPress={toggleModal} />
-          </View>
-          </Modal>
-          </View>
-  <View style={styles.buttonContainer}>
-  <Button text={lang} onPress={langModal} />
-    <Modal 
-    isVisible={isModal}
-    style={styles.modal}
-    >
-          <View style={styles.modalCountry}>
-          {
-        language.map((language) =>
-          <RadioButton
-            item={language}
-            key={language.id}
-            checked={lang === language.value}
-            onChange={selestLanguage}
-            text={language.value}
-          />
-        )
-      }
-            <Button text={"select language"} onPress={langModal} />
-          </View>
-          </Modal>
-  </View>
-  <ButtonNext text={'start'}  />
-    </View>
-    
-
+      <View style={styles.modalCountry}>
+        {
+          countryArray.map((el) =>
+            <RadioButton
+              item={el}
+              key={el.id}
+              checked={country === el.value}
+              onChange={selectCountry}
+              text={el.value}
+            />
+          )
+        }
+        <Button text={"select country"} onPress={toggleModal} />
+      </View>
+    </Modal>
   )
-    
-}
 
+  const modalLanguage = () => (
+    <Modal
+      isVisible={isModal}
+      style={styles.modal}
+    >
+      <View style={styles.modalCountry}>
+        {
+          language.map((language) =>
+            <RadioButton
+              item={language}
+              key={language.id}
+              checked={lang === language.value}
+              onChange={selestLanguage}
+              text={language.value}
+            />
+          )
+        }
+        <Button text={"select language"} onPress={langModal} />
+      </View>
+    </Modal>
+  )
+
+  return (
+    <View style={styles.container}>
+      <View style={{ height: StatusBar.currentHeight }}>
+        <StatusBar barStyle='dark-content' translucent backgroundColor='transparent' />
+      </View>
+      <View style={styles.containerLogo}>
+        <Image source={require('../image/boot-splash/logo.png')} style={styles.imgLogo} />
+      </View>
+      <Text style={styles.midTextBlack}>Welcome</Text>
+      <Text style={styles.midText}>Stay safe</Text>
+      <View style={styles.checkBoxContainer}>
+        <Text style={styles.selectAge} >Please, select your age</Text>
+        <Image source={require('../image/emoji.png')} style={styles.imgEmoji} />
+      </View>
+      <View style={styles.containerImgPeople}>
+        <View>
+          {
+            item.map((element) =>
+              <RadioButton
+                item={element}
+                key={element.id}
+                checked={age === element.value}
+                onChange={inc}
+                text={element.text}
+              />
+            )
+          }
+        </View>
+        <Image source={require('../image/people.png')} style={styles.imgPeople} />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button text={country ? country : 'Select Country'} onPress={toggleModal} />
+        {modalCountry()}
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button text={lang ? lang : 'Select Language'} onPress={langModal} />
+        {modalLanguage()}
+      </View>
+      <ButtonNext text={'start'} onPress={country ? goToHome : createTwoButtonAlert} />
+    </View>
+  )
+}
 
 const styles = ScaledSheet.create({
   container: {
@@ -207,9 +215,8 @@ const styles = ScaledSheet.create({
     paddingHorizontal: '30@ms'
   },
   containerLogo: {
-   alignItems: 'center',
-   marginTop: '60@ms'
-   
+    alignItems: 'center',
+    marginTop: '60@ms'
   },
   imgLogo: {
     width: '167@ms',
@@ -218,18 +225,24 @@ const styles = ScaledSheet.create({
   },
   midText: {
     color: '#4CD964',
-    fontSize: '26@ms',
+    fontSize: '30@ms',
     textAlign: 'center',
     fontWeight: 'bold',
-    marginTop: '42@ms',
-
+  },
+  midTextBlack: {
+    color: '#000',
+    fontSize: '30@ms',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    marginTop: '20@ms',
   },
   selectAge: {
+    marginBottom: '40@ms',
     fontSize: '17@ms',
     color: '#666666',
   },
   checkBoxContainer: {
-    marginTop: '56@ms',
+    marginTop: '30@ms',
     flexDirection: 'row',
   },
   imgEmoji: {
@@ -240,6 +253,12 @@ const styles = ScaledSheet.create({
   },
   containerImgPeople: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  imgPeople: {
+    resizeMode: 'contain',
+    width: '210@ms',
+    height: '110@ms'
   },
 
   modal: {
@@ -261,7 +280,5 @@ const styles = ScaledSheet.create({
     backgroundColor: 'red',
   }
 });
-
-
 
 export default WelcomeScreen;

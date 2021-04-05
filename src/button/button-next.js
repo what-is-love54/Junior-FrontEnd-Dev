@@ -1,9 +1,6 @@
-import React, { useState, setState } from 'react';
-import { View, Text, AppRegistry, StatusBar, Image, TouchableOpacity,} from 'react-native';
+import React from 'react';
+import { Text, Image, TouchableOpacity } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
-
-
-
 
 const ButtonNext = ({
   disabled = false,
@@ -14,12 +11,11 @@ const ButtonNext = ({
   isLoading = false,
   text = "",
   icon = null,
-  iconStyle = {}
+  iconStyle = {},
 }) => {
   return(
     <TouchableOpacity
       activeOpacity={0.6}
-      disabled={disabled}
       onPress={onPress}
       style={styles.selectCountry}>
     <Text style={styles.textCountry}>
@@ -29,10 +25,6 @@ const ButtonNext = ({
     </TouchableOpacity>
   )
 }
-
-
-
-
 
 const styles = ScaledSheet.create({
   selectCountry: {
@@ -57,6 +49,5 @@ const styles = ScaledSheet.create({
     marginLeft: '14@ms',
   }
 })
-
 
 export default ButtonNext

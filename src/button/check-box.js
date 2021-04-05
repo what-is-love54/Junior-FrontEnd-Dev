@@ -1,15 +1,7 @@
 import React from 'react';
-import {
-  TouchableOpacity,
-  StyleSheet,
-  View,
-  Text,
- Button
-} from 'react-native';
+import { TouchableOpacity, View, Text } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
-
 import CheckIcon from '../image/checkIcon';
-
 
 const RadioButton = ({
   onChange = () => null,
@@ -39,7 +31,6 @@ const RadioButton = ({
     </TouchableOpacity>
   );
 }
-
 
 const styles = ScaledSheet.create({
   container: {

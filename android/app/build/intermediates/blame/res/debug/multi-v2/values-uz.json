@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sergiy/Documents/covid-19/test_projekt/AwesomeProject/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml",
+            "outputFile": "/home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml",
             "map": [
                 {
                     "source": "/home/sergiy/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/res/values-uz/values-uz.xml",
