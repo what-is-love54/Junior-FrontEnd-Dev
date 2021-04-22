@@ -1,8 +1,13 @@
-import React, { useState, setState } from 'react';
+import React from 'react';
 import { View, Text, StatusBar, Image, TouchableOpacity } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
+import { Routes } from '../navigation/Routes';
 
-const ChoseSituation = () => {
+const ChoseSituation = ({ navigation }) => {
+
+  const goToSafety = () => navigation.navigate(Routes.YourSafety);
+  const goToPsyhology = () => navigation.navigate(Routes.Psyhology)
+
   return (
     <View style={styles.container}>
       <View style={{ height: StatusBar.currentHeight }}>
@@ -13,40 +18,51 @@ const ChoseSituation = () => {
         <Text style={styles.midleText}>
           You can choose what you will do in the near future
     </Text>
+        <Image source={require('../image/checkIcon.png')} style={styles.checkIcon} />
       </View>
-      <View style={styles.menuContainer}>
-        <View style={styles.menuItem}>
-          <TouchableOpacity style={styles.menu}>
-            <Image source={require('../image/icon/Dog.png')} style={styles.imgChoose} />
-          </TouchableOpacity>
-          <Text style={{ textAlign: 'center' }}>I’m going to walk my dog</Text>
+      <View style={styles.allMenu}>
+        <View style={styles.menuContainer}>
+          <View style={styles.menuItem}>
+            <TouchableOpacity style={styles.menu} onPress={goToSafety}>
+              <Image source={require('../image/icon/Dog.png')} style={styles.imgChoose} />
+            </TouchableOpacity>
+            <Text style={{ textAlign: 'center' }}>I’m going to walk my dog</Text>
+          </View>
+          <View style={styles.menuItem}>
+            <TouchableOpacity style={styles.menu} onPress={goToPsyhology} >
+              <Image source={require('../image/icon/Home.png')} style={styles.imgChoose} />
+            </TouchableOpacity>
+            <Text style={{ textAlign: 'center' }}>I stay at home today</Text>
+          </View>
         </View>
-        <View style={styles.menuItem}>
-          <TouchableOpacity style={styles.menu}>
-            <Image source={require('../image/icon/Home.png')} style={styles.imgChoose} />
-          </TouchableOpacity>
-          <Text style={{ textAlign: 'center' }}>I stay at home today</Text>
+        <View style={styles.menuContainer}>
+          <View style={styles.menuItem}>
+            <TouchableOpacity style={styles.menu} onPress={goToSafety}>
+              <Image source={require('../image/icon/ShoppingBag.png')} style={styles.imgChoose} />
+            </TouchableOpacity>
+            <Text style={{ textAlign: 'center' }}>I’m going to the shop</Text>
+          </View>
+          <View style={styles.menuItem}>
+            <TouchableOpacity style={styles.menu} onPress={goToSafety}>
+              <Image source={require('../image/icon/Pharmacy.png')} style={styles.imgChoose} />
+            </TouchableOpacity>
+            <Text style={{ textAlign: 'center' }}>I’m going to the pharmacy</Text>
+          </View>
         </View>
-      </View>
-      <View style={styles.menuContainer}>
-        <View style={styles.menuItem}>
-          <TouchableOpacity style={styles.menu}>
-            <Image source={require('../image/icon/ShoppingBag.png')} style={styles.imgChoose} />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.menu}>
-            <Image source={require('../image/icon/Pharmacy.png')} style={styles.imgChoose} />
-          </TouchableOpacity>
+        <View style={styles.menuContainer}>
+          <View style={styles.menuItem}>
+            <TouchableOpacity style={styles.menu} onPress={goToSafety}>
+              <Image source={require('../image/icon/Walk.png')} style={styles.imgChoose} />
+            </TouchableOpacity>
+            <Text style={{ textAlign: 'center' }}>I’m going for a walk</Text>
+          </View>
+          <View style={styles.menuItem}>
+            <TouchableOpacity style={styles.menu} onPress={goToSafety}>
+              <Image source={require('../image/icon/Icon.png')} style={styles.imgChoose} />
+            </TouchableOpacity>
+            <Text style={{ textAlign: 'center' }}>I’m visiting my friends</Text>
+          </View>
         </View>
-      </View>
-      <View style={styles.menuContainer}>
-        <View style={styles.menuItem}>
-          <TouchableOpacity style={styles.menu}>
-            <Image source={require('../image/icon/Walk.png')} style={styles.imgChoose} />
-          </TouchableOpacity>
-        </View>
-        <TouchableOpacity style={styles.menu}>
-          <Image source={require('../image/icon/Icon.png')} style={styles.imgChoose} />
-        </TouchableOpacity>
       </View>
     </View>
   )
@@ -59,7 +75,8 @@ const styles = ScaledSheet.create({
   upText: {
     fontSize: '17@ms',
     textAlign: 'center',
-    marginTop: '62@ms',
+    marginTop: '30@ms',
+    fontWeight: 'bold'
   },
   midleTextContainer: {
     alignItems: 'center',
@@ -80,7 +97,7 @@ const styles = ScaledSheet.create({
   },
   menuContainer: {
     flexDirection: 'row',
-    marginTop: '36@ms',
+    marginVertical: '10@ms',
     justifyContent: 'space-around',
   },
   imgChoose: {
@@ -89,9 +106,13 @@ const styles = ScaledSheet.create({
   },
 
   menuItem: {
-    maxWidth: '120@ms',
+    maxWidth: '110@ms',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+  checkIcon: {
+    resizeMode: 'contain',
+    width: '25@ms'
   },
 });
 

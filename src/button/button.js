@@ -13,23 +13,22 @@ const Button = ({
   icon = null,
   iconStyle = {}
 }) => {
-  return(
+  return (
     <TouchableOpacity
       activeOpacity={0.6}
       disabled={disabled}
       onPress={onPress}
       style={styles.selectCountry}>
-    <Text style={styles.textCountry}>
-    {text}
-    </Text>
-    <Image source={require('../image/arrow.png')} style={styles.imgArrow} />
+      <Text style={styles.textCountry}>
+        {text}
+      </Text>
+      <Image source={icon} style={styles.imgArrow} />
     </TouchableOpacity>
   )
 }
 
 const styles = ScaledSheet.create({
   selectCountry: {
-    // marginTop: '45@ms',
     height: '50@ms',
     borderRadius: '10@ms',
     borderColor: '#4486FF',

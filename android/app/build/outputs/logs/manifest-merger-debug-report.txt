@@ -8,13 +8,15 @@ MERGED from /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-Fron
 MERGED from [com.facebook.flipper:flipper:0.54.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/bd2cab46fd45b530a274001375333ead/flipper-network-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/dd7dfafbb0af41b4347f18654ea5c436/flipper-fresco-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/d8031ba7ad89eac391d4216992656ff2/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-async-storage_async-storage] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_masked-view] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-bootsplash] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-bootsplash/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/f2e2077a2b4a168ed3caa4909cae7a46/jetified-react-native-0.63.4/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/132d763539a4ce1aa06c7bbe1f5ad7eb/jetified-react-native-0.63.4/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/37b6f551bc5ae153b0b627de8f563815/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r245459] /home/sergiy/.gradle/caches/transforms-2/files-2.1/6dd6245206e34676e1ee3aa6ee0f68c9/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-linear-gradient] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -60,7 +62,7 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/sergiy/.gradle/caches/t
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/4da6ddd3c71dbaec92b0fdf3bbca4ce7/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/2ef959591ee3dfd7e7d0f130ebacb270/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/babedcb26ba2505096ea9fb87ec93180/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/3ad95dc7b1c0c8c8e1d3f0054ad0bdd5/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/3e2a20a426608b23c415279d74719b2b/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/c114d4501470930b3986c4f9bd2da0fd/ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
 INJECTED from /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/src/debug/AndroidManifest.xml:2:1-8:12
 INJECTED from /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/src/debug/AndroidManifest.xml:2:1-8:12
@@ -92,8 +94,8 @@ application
 ADDED from /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/src/main/AndroidManifest.xml:6:5-32:19
 MERGED from /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/src/main/AndroidManifest.xml:6:5-32:19
 MERGED from /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/src/main/AndroidManifest.xml:6:5-32:19
-MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/f2e2077a2b4a168ed3caa4909cae7a46/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/f2e2077a2b4a168ed3caa4909cae7a46/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/132d763539a4ce1aa06c7bbe1f5ad7eb/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/132d763539a4ce1aa06c7bbe1f5ad7eb/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.9.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/c34148f30cbc3e974eff21cbfb6a112a/soloader-0.9.0/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.9.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/c34148f30cbc3e974eff21cbfb6a112a/soloader-0.9.0/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.1.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/AndroidManifest.xml:22:5-20
@@ -174,6 +176,10 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/sergiy/.g
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/bd2cab46fd45b530a274001375333ead/flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/dd7dfafbb0af41b4347f18654ea5c436/flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/dd7dfafbb0af41b4347f18654ea5c436/flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
+MERGED from [androidx.multidex:multidex:2.0.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/d8031ba7ad89eac391d4216992656ff2/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/d8031ba7ad89eac391d4216992656ff2/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-async-storage_async-storage] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-async-storage_async-storage] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_masked-view] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-bootsplash] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-bootsplash/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -186,8 +192,8 @@ MERGED from [:react-native-safe-area-context] /home/sergiy/Documents/covid-19/te
 MERGED from [:react-native-safe-area-context] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/f2e2077a2b4a168ed3caa4909cae7a46/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/f2e2077a2b4a168ed3caa4909cae7a46/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/132d763539a4ce1aa06c7bbe1f5ad7eb/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.63.4] /home/sergiy/.gradle/caches/transforms-2/files-2.1/132d763539a4ce1aa06c7bbe1f5ad7eb/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/37b6f551bc5ae153b0b627de8f563815/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/37b6f551bc5ae153b0b627de8f563815/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [org.webkit:android-jsc:r245459] /home/sergiy/.gradle/caches/transforms-2/files-2.1/6dd6245206e34676e1ee3aa6ee0f68c9/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
@@ -278,8 +284,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/sergiy/.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/2ef959591ee3dfd7e7d0f130ebacb270/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/babedcb26ba2505096ea9fb87ec93180/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/babedcb26ba2505096ea9fb87ec93180/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/3ad95dc7b1c0c8c8e1d3f0054ad0bdd5/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/3ad95dc7b1c0c8c8e1d3f0054ad0bdd5/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/3e2a20a426608b23c415279d74719b2b/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/3e2a20a426608b23c415279d74719b2b/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/c114d4501470930b3986c4f9bd2da0fd/ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.2.0] /home/sergiy/.gradle/caches/transforms-2/files-2.1/c114d4501470930b3986c4f9bd2da0fd/ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
 INJECTED from /home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/src/debug/AndroidManifest.xml

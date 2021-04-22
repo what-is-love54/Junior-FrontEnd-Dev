@@ -3,16 +3,16 @@ import { Routes } from "./Routes";
 import { createStackNavigator } from '@react-navigation/stack';
 import Welcome from '../screens/welcome'
 import TabNavigator from './tabNavigation'
-import Home from '../screens/Home'
+import Auth from '../screens/Auth'
 
 const Stack = createStackNavigator();
 
 const AppNavigation = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Welcome" component={Welcome} options={{ header: () => null }} />
-      {/* <Stack.Screen name="Home" component={Home} options={{header: () => null}} /> */}
-      <Stack.Screen name="TabNavigator" component={TabNavigator} options={{ header: () => null }} />
+    <Stack.Navigator headerMode='none'>
+      <Stack.Screen name={Routes.Welcome} component={Welcome} />
+      <Stack.Screen name={Routes.Tabs} component={TabNavigator} />
+      <Stack.Screen name={Routes.Auth} component={Auth} />
     </Stack.Navigator>
   );
 }

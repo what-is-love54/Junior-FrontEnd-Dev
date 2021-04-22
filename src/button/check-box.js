@@ -1,15 +1,15 @@
 import React from 'react';
-import { TouchableOpacity, View, Text } from 'react-native';
+import { TouchableOpacity, View, Text, Image } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
 import CheckIcon from '../image/checkIcon';
 
-const RadioButton = ({
+const CheckBox = ({
   onChange = () => null,
   checked = false,
   item = null,
   text = ''
 }) => {
-  const onHandleChange = () => onChange(item);
+  const onHandleChange = () => onChange();
 
   return (
     <TouchableOpacity
@@ -37,7 +37,6 @@ const styles = ScaledSheet.create({
     marginBottom: '10@ms',
     alignItems: 'center',
     flexDirection: 'row',
-    width: '100@ms'
   },
   radioText: {
     paddingLeft: '2@ms',
@@ -54,4 +53,4 @@ const styles = ScaledSheet.create({
   },
 });
 
-export default RadioButton;
+export default CheckBox;

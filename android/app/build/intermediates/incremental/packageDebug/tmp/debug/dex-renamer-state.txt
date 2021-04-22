@@ -1,4 +1,7 @@
-#Wed Mar 03 14:01:15 EET 2021
+#Wed Apr 14 15:33:46 EEST 2021
+base.1=/home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes2.dex
+path.1=classes2.dex
 base.0=/home/sergiy/Documents/covid-19/test_projekt/git-project/Junior-FrontEnd-Dev/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

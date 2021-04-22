@@ -1,8 +1,8 @@
 import React, { useState, setState } from 'react';
 import Modal from 'react-native-modal';
-import { View, Text, StatusBar, Image, Alert } from 'react-native';
+import { View, Text, StatusBar, Image, Alert, TouchableOpacity } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
-import RadioButton from "../button/check-box";
+import RadioButton from "../button/radio-button";
 import Button from "../button/button";
 import ButtonNext from "../button/button-next";
 import { Routes } from '../navigation/Routes';
@@ -58,8 +58,8 @@ const countryArray = [
     id: 7,
     value: 'Poland',
   },
-
 ];
+
 const language = [
   {
     id: 0,
@@ -93,39 +93,41 @@ const language = [
     id: 7,
     value: 'Polish',
   },
-
 ];
 
-const WelcomeScreen = ({ navigation, route }) => {
+const WelcomeScreen = ({ navigation }) => {
 
-  const [age, setAge] = useState(item.value)
+  const [age, setAge] = useState('');
   const [isModalVisible, setModalVisible] = useState(false);
   const [isModal, setModal] = useState(false);
-  const [country, setCountry] = useState('')
-  const [lang, setLang] = useState('')
-  console.log(country)
+  const [country, setCountry] = useState('');
+  const [lang, setLang] = useState('');
+
   const selestLanguage = (language) => setLang(language.value);
   const selectCountry = (country) => setCountry(country.value);
-  const inc = (item) => setAge(item.value);
+  const selectAge = (item) => setAge(item.value);
   const toggleModal = () => setModalVisible(!isModalVisible);
   const langModal = () => setModal(!isModal);
 
-  const goToHome = () => navigation.navigate('TabNavigator', {
-    screen: 'MainHome',
+  const goToHome = () => navigation.navigate(Routes.Tabs, {
+    screen: Routes.Home,
     params: { country },
   });
+  const goToAuth = () => navigation.navigate(Routes.Auth)
   const createTwoButtonAlert = () =>
     Alert.alert(
       " ",
-      "А НІХУЯ )))",
+      "Виберіть всі пункти",
       [
         { text: "OK", onPress: () => console.log("OK Pressed") }
       ]
     );
+
   const modalCountry = () => (
     <Modal
       isVisible={isModalVisible}
       style={styles.modal}
+      onBackdropPress={() => setModalVisible(false)}
     >
       <View style={styles.modalCountry}>
         {
@@ -148,6 +150,7 @@ const WelcomeScreen = ({ navigation, route }) => {
     <Modal
       isVisible={isModal}
       style={styles.modal}
+      onBackdropPress={() => setModal(false)}
     >
       <View style={styles.modalCountry}>
         {
@@ -171,6 +174,9 @@ const WelcomeScreen = ({ navigation, route }) => {
       <View style={{ height: StatusBar.currentHeight }}>
         <StatusBar barStyle='dark-content' translucent backgroundColor='transparent' />
       </View>
+      <TouchableOpacity onPress={goToAuth} >
+        <Text style={styles.backImg}>Demo</Text>
+      </TouchableOpacity>
       <View style={styles.containerLogo}>
         <Image source={require('../image/boot-splash/logo.png')} style={styles.imgLogo} />
       </View>
@@ -188,7 +194,7 @@ const WelcomeScreen = ({ navigation, route }) => {
                 item={element}
                 key={element.id}
                 checked={age === element.value}
-                onChange={inc}
+                onChange={selectAge}
                 text={element.text}
               />
             )
@@ -197,14 +203,28 @@ const WelcomeScreen = ({ navigation, route }) => {
         <Image source={require('../image/people.png')} style={styles.imgPeople} />
       </View>
       <View style={styles.buttonContainer}>
-        <Button text={country ? country : 'Select Country'} onPress={toggleModal} />
+        <Button
+          text={country ? country : 'Select Country'}
+          onPress={toggleModal}
+          icon={require('../image/arrow.png')}
+        />
         {modalCountry()}
       </View>
       <View style={styles.buttonContainer}>
-        <Button text={lang ? lang : 'Select Language'} onPress={langModal} />
+        <Button
+          text={lang ? lang : 'Select Language'}
+          onPress={langModal}
+          icon={require('../image/arrow.png')}
+        />
         {modalLanguage()}
       </View>
-      <ButtonNext text={'start'} onPress={country ? goToHome : createTwoButtonAlert} />
+      <View style={{ marginTop: 30 }}>
+        <ButtonNext
+          text={'Start'}
+          onPress={country, lang, age ? goToHome : createTwoButtonAlert}
+          icon={require('../image/icon/healthIcon.png')}
+        />
+      </View>
     </View>
   )
 }
@@ -216,7 +236,7 @@ const styles = ScaledSheet.create({
   },
   containerLogo: {
     alignItems: 'center',
-    marginTop: '60@ms'
+    // marginTop: -20
   },
   imgLogo: {
     width: '167@ms',
@@ -267,17 +287,18 @@ const styles = ScaledSheet.create({
   },
   modalCountry: {
     backgroundColor: '#fff',
-    width: '222@ms',
-    height: '382@ms',
+    width: '220@ms',
+    height: '420@ms',
     borderRadius: '10@ms',
     justifyContent: 'center',
     alignItems: 'center',
   },
   buttonContainer: {
-    marginTop: '20@ms',
+    marginTop: '18@ms',
   },
-  btnStart: {
-    backgroundColor: 'red',
+  backImg: {
+    color: '#4486FF',
+    textAlign: 'right'
   }
 });
 

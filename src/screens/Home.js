@@ -2,14 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StatusBar, Image, ActivityIndicator } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
 import moment from 'moment';
+import ButtonNext from '../button/button-next';
+import { Routes } from '../navigation/Routes';
 
-
-const Home = ({ route }) => {
-  const [isLoading, setLoading] = useState(false);
+const Home = ({ navigation, route }) => {
+  const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [currentCountry, setCurrentCountry] = useState({})
   const { country } = route.params;
   const date = moment().format('DD.MM.YYYY');
+  const goToChoseSituation = () => navigation.navigate(Routes.ChoseSituation);
 
   async function getData(url = '') {
     const response = await fetch(url, {
@@ -21,7 +23,6 @@ const Home = ({ route }) => {
   useEffect(() => {
     getData('https://api.covid19api.com/summary')
       .then((data) => {
-        setLoading(true)
         setData(data.Countries)
       })
       .catch((error) => console.error(error))
@@ -33,7 +34,7 @@ const Home = ({ route }) => {
   }, [data]);
 
   const findCountry = () => {
-    let myCountry = data.find(item => item.Country === country)
+    let myCountry = data?.find(item => item.Country === country)
     setCurrentCountry(myCountry)
   };
 
@@ -85,7 +86,14 @@ const Home = ({ route }) => {
         <Text style={styles.data}>COVID-19 </Text>
         <Text style={styles.data}> {country}  {date}</Text>
       </View>
-      {isLoading ? <ActivityIndicator /> : <CovidInfo />}
+      {isLoading ? <ActivityIndicator size="large" color='blue' style={styles.horizontal} /> : <CovidInfo />}
+      <View style={{ marginTop: 30 }}>
+        <ButtonNext
+          text={'I want to stay safe'}
+          icon={require('../image/icon/loveIcon.png')}
+          onPress={goToChoseSituation}
+        />
+      </View>
     </View>
   )
 };
@@ -97,17 +105,17 @@ const styles = ScaledSheet.create({
   },
   containerLogo: {
     alignItems: 'center',
-    marginTop: '30@ms'
+    marginTop: '25@ms'
   },
   imgLogo: {
     width: '167@ms',
-    height: '55@ms',
+    height: '50@ms',
     resizeMode: 'contain',
   },
   textInfo: {
     textAlign: 'center',
     fontSize: '15@ms',
-    marginTop: '33@ms',
+    marginTop: '30@ms',
   },
   textInfoNext: {
     textAlign: 'center',
@@ -115,7 +123,7 @@ const styles = ScaledSheet.create({
   },
   midText: {
     textAlign: 'center',
-    marginTop: '25@ms',
+    marginTop: '20@ms',
     fontSize: '15@ms',
     color: '#4CD964'
   },
@@ -125,10 +133,10 @@ const styles = ScaledSheet.create({
     fontWeight: 'bold',
   },
   imgStay: {
-    height: '88@ms',
-    width: '88@ms',
-    marginTop: '60@ms',
-    marginBottom: '23@ms'
+    height: '80@ms',
+    width: '80@ms',
+    marginTop: '50@ms',
+    marginBottom: '20@ms'
   },
   infoContainer: {
     flexDirection: 'row',
@@ -140,6 +148,11 @@ const styles = ScaledSheet.create({
     marginTop: '5@ms',
     fontSize: '13@ms',
     color: '#666666'
+  },
+  horizontal: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: 'center'
   }
 });
 
